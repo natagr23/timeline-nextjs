@@ -7,22 +7,6 @@
 
 ![Landing Page](https://github.com/natagr23/amplify-nextjs-app/blob/main/src/Data/aws_crud_auth_base1.PNG)
 
-2. After Login
-
-![Login](https://github.com/natagr23/amplify-nextjs-app/blob/main/src/Data/aws_crud_auth_base2.PNG)
-
-3. Add Data
-
-![Login](https://github.com/natagr23/amplify-nextjs-app/blob/main/src/Data/aws_crud_auth_base3.PNG)
-
-4. Update Data
-
-![Login](https://github.com/natagr23/amplify-nextjs-app/blob/main/src/Data/aws_crud_auth_base4.PNG)
-
-5. DynamoDB Table
-
-![Login](https://github.com/natagr23/amplify-nextjs-app/blob/main/src/Data/aws_crud_auth_base5.PNG)
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
