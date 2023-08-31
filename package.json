@@ -20,6 +20,8 @@
     "@mui/styled-engine-sc": "^5.14.7",
     "autoprefixer": "10.4.14",
     "aws-amplify": "^5.3.7",
+    "flag-icons": "^6.11.0",
+    "material-ui-flags": "^1.2.4",
     "next": "^13.4.13",
     "postcss": "8.4.27",
     "react": "18.2.0",

@@ -16,8 +16,36 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import OpenInFullIcon from '@mui/icons-material/OpenInFull';
+import '/node_modules/flag-icons/css/flag-icons.min.css';
 import data from '../data/data.json';
+import '@fontsource/roboto/300.css';
+
+import { createTheme } from '@mui/material/styles';
+
+let theme = createTheme({
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+});
+
+theme = createTheme(theme, {
+  palette: {
+    info: {
+      main: theme.palette.secondary.main,
+    },
+  },
+});
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -51,7 +79,7 @@ const AccordionSummary = styled((props) => (
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
+  padding: theme.spacing(1),
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
@@ -74,13 +102,23 @@ const Home = () => {
           <>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentStyle={{
+                background: 'rgb(33, 150, 243)',
+                color: '#fff',
+              }}
               contentArrowStyle={{
                 borderRight: '7px solid  rgb(33, 150, 243)',
               }}
               date="2011 - present"
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              icon={<OpenInFullIcon />}
+              icon={
+                <>
+                  <span
+                    style={{ marginTop: '1.3' + 'em' }}
+                    class="fi fi-ax fib"
+                  ></span>
+                </>
+              }
               intersectionObserverProps={{ triggerOnce: false }}
             >
               <Card
@@ -101,16 +139,29 @@ const Home = () => {
                       height={150}
                       style={{ display: 'inline-grid' }}
                     />
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography
+                      fontFamily="Segoe UI Symbol"
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      style={{ marginTop: '0.5' + 'em' }}
+                    >
                       {item.title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      fontFamily="Segoe UI Symbol"
+                    >
                       {item.content}
                     </Typography>
                   </CardContent>
                   <CardActions>
+                    <span style={{ marginLeft: '1' + 'em' }}>Source:</span>
                     <Link color="#6b34a6" href={item.link} variant="body2">
-                      Source Link
+                      <span style={{ marginLeft: '1' + 'em' }}>
+                        {item.link}
+                      </span>
                     </Link>
                   </CardActions>
                   <Accordion
@@ -121,10 +172,12 @@ const Home = () => {
                       aria-controls="panel1d-content"
                       id="panel1d-header"
                     >
-                      <Typography>Collapsible Group Item #1</Typography>
+                      <Typography fontFamily="Segoe UI Symbol">
+                        Collapsible Group Item #1
+                      </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography>
+                      <Typography fontFamily="Segoe UI Symbol">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse malesuada lacus ex, sit amet blandit leo
                         lobortis eget. Lorem ipsum dolor sit amet, consectetur
@@ -141,10 +194,12 @@ const Home = () => {
                       aria-controls="panel2d-content"
                       id="panel2d-header"
                     >
-                      <Typography>Collapsible Group Item #2</Typography>
+                      <Typography fontFamily="Segoe UI Symbol">
+                        Collapsible Group Item #2
+                      </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography>
+                      <Typography fontFamily="Segoe UI Symbol">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse malesuada lacus ex, sit amet blandit leo
                         lobortis eget. Lorem ipsum dolor sit amet, consectetur
@@ -161,10 +216,12 @@ const Home = () => {
                       aria-controls="panel3d-content"
                       id="panel3d-header"
                     >
-                      <Typography>Collapsible Group Item #3</Typography>
+                      <Typography fontFamily="Segoe UI Symbol">
+                        Collapsible Group Item #3
+                      </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography>
+                      <Typography fontFamily="Segoe UI Symbol">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse malesuada lacus ex, sit amet blandit leo
                         lobortis eget. Lorem ipsum dolor sit amet, consectetur
