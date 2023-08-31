@@ -6,230 +6,179 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {
-  Box,
-  Container,
-  Grid,
-  Pagination,
-  Typography,
-  Stack,
-} from '@mui/material';
-import {
-  IconButton,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Divider,
-  Modal,
-  Toolbar,
-} from '@mui/material';
-
+import { Box, Typography, Link } from '@mui/material';
+import { Card, CardActions, CardContent, CardMedia } from '@mui/material';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
-import img from './data/images/cards/Virgen_de_guadalupe1.jpeg';
 import '@aws-amplify/ui-react/styles.css';
-import CopyrightIcon from '@mui/icons-material/Copyright';
-import LinkIcon from '@mui/icons-material/Link';
-import Link from '@mui/material/Link';
+import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
-import CloseIcon from '@mui/icons-material/Close';
+import data from '../data/data.json';
 
-const backgroundImage = './data/images/cards/Virgen_de_guadalupe1.jpeg';
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  '&:not(:last-child)': {
+    borderBottom: 0,
+  },
+  '&:before': {
+    display: 'none',
+  },
+}));
 
-const items = [
-  {
-    title: 'January 2022',
-    cardTitle: 'Event 1',
-    cardSubtitle: 'Event 1 Subtitle',
-    cardDetailedText: 'This is the first event on the timeline.',
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === 'dark'
+      ? 'rgba(255, 255, 255, .05)'
+      : 'rgba(0, 0, 0, .03)',
+  flexDirection: 'row-reverse',
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    transform: 'rotate(90deg)',
   },
-  {
-    title: 'February 2022',
-    cardTitle: 'Event 2',
-    cardSubtitle: 'Event 2 Subtitle',
-    cardDetailedText: 'This is the second event on the timeline.',
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(1),
   },
-  {
-    title: 'March 2022',
-    cardTitle: 'Event 3',
-    cardSubtitle: 'Event 3 Subtitle',
-    cardDetailedText: 'This is the third event on the timeline.',
-  },
-];
+}));
 
-const Home = ({ photo, ...rest }) => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: '1px solid rgba(0, 0, 0, .125)',
+}));
+
+const Home = () => {
+  const [expanded, setExpanded] = React.useState('');
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  };
   return (
     <Box
-      sx={{
-        width: { sm: `calc(100% - ${240}px)` },
-        ml: { sm: `${240}px` },
-        background: 'rgb(255, 246, 241)',
-      }}
+    // sx={{
+    //   width: { sm: `calc(100% - ${240}px)` },
+    //   ml: { sm: `${240}px` },
+    //   background: 'rgb(255, 246, 241)',
+    // }}
     >
-      <VerticalTimeline layout="1-column-right">
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="2011 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          // icon={<WorkIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <Card
-            raised
-            sx={{
-              maxWidth: 600,
-              position: 'relative', // Set the parent card as relative positioning
-              background: `url(${backgroundImage}) center/cover no-repeat`,
-              boxShadow: 'none', // Remove the default shadow
-            }}
-          >
-            <Card sx={{ maxWidth: 600 }}>
-              <Image src={img} alt="green iguana" height={150} />
-              <IconButton color="secondary" onClick={handleOpen}>
-                {' '}
-                <OpenInFullIcon />
-              </IconButton>
-              <Modal
-                sx={{ overflowY: 'scroll' }}
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
+      <VerticalTimeline>
+        {data.map((item, index) => (
+          <>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid  rgb(33, 150, 243)',
+              }}
+              date="2011 - present"
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<OpenInFullIcon />}
+              intersectionObserverProps={{ triggerOnce: false }}
+            >
+              <Card
+                raised
+                sx={{
+                  maxWidth: 600,
+                  position: 'relative', // Set the parent card as relative positioning
+                  boxShadow: 'none', // Remove the default shadow
+                }}
               >
-                <Box
-                  display="flex"
-                  justifycontent="center"
-                  alignItems="center"
-                  minheight="30vh"
-                  // sx={style}
-                >
-                  <Toolbar>
-                    <CardMedia
-                      component="img"
-                      height="800"
-                      image={'./data/images/cards/Virgen_de_guadalupe1.jpeg'}
-                      title="test title"
+                <Card sx={{ maxWidth: 600 }}>
+                  <CardMedia />
+                  <CardContent>
+                    <Image
+                      src="/Virgen_de_guadalupe1.jpeg"
+                      width={100}
+                      alt="green iguana"
+                      height={150}
+                      style={{ display: 'inline-grid' }}
                     />
-                    <Image src={img} alt="green iguana" height={150} />
-                  </Toolbar>
-
-                  <IconButton color="secondary" onClick={handleClose}>
-                    <CloseIcon />
-                  </IconButton>
-                </Box>
-              </Modal>
-              <CardMedia />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-              </CardActions>
-            </Card>
-          </Card>
-        </VerticalTimelineElement>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {item.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {item.content}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Link color="#6b34a6" href={item.link} variant="body2">
+                      Source Link
+                    </Link>
+                  </CardActions>
+                  <Accordion
+                    expanded={expanded === 'panel1'}
+                    onChange={handleChange('panel1')}
+                  >
+                    <AccordionSummary
+                      aria-controls="panel1d-content"
+                      id="panel1d-header"
+                    >
+                      <Typography>Collapsible Group Item #1</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse malesuada lacus ex, sit amet blandit leo
+                        lobortis eget. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Suspendisse malesuada lacus ex, sit
+                        amet blandit leo lobortis eget.
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion
+                    expanded={expanded === 'panel2'}
+                    onChange={handleChange('panel2')}
+                  >
+                    <AccordionSummary
+                      aria-controls="panel2d-content"
+                      id="panel2d-header"
+                    >
+                      <Typography>Collapsible Group Item #2</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse malesuada lacus ex, sit amet blandit leo
+                        lobortis eget. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Suspendisse malesuada lacus ex, sit
+                        amet blandit leo lobortis eget.
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion
+                    expanded={expanded === 'panel3'}
+                    onChange={handleChange('panel3')}
+                  >
+                    <AccordionSummary
+                      aria-controls="panel3d-content"
+                      id="panel3d-header"
+                    >
+                      <Typography>Collapsible Group Item #3</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse malesuada lacus ex, sit amet blandit leo
+                        lobortis eget. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Suspendisse malesuada lacus ex, sit
+                        amet blandit leo lobortis eget.
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                </Card>
+              </Card>
+            </VerticalTimelineElement>
+          </>
+        ))}
       </VerticalTimeline>
-      {/* <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          // icon={<WorkIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          // icon={<WorkIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          // icon={<WorkIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          // icon={<SchoolIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          // icon={<SchoolIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          // icon={<SchoolIcon />}
-          intersectionObserverProps={{ triggerOnce: false }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          intersectionObserverProps={{ triggerOnce: false }}
-        />
-      </VerticalTimeline>*/}
     </Box>
   );
 };
