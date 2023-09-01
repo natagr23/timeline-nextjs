@@ -11,35 +11,36 @@ const Navbar = ({ children }) => {
   return (
     <div>
       {children}
-
+      <span style={{ fontWeight: 'bold' }}>
+        Profecías de los últimos tiempos
+      </span>
       <div>
-        <Box sx={{ width: 500 }} style={{ alignItems: 'center' }}></Box>
-        <BottomNavigation
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        >
-          <Link href={'/'} className="content" style={{}}>
-            <BottomNavigationAction
-              label="Recents"
-              icon={<LightbulbCircleIcon />}
-            />
-            <span style={{ fontWeight: 'bold' }}>
-              Profecías de la Virgen María
-            </span>
-          </Link>
-          <Link href={'/private'} className="content" style={{}}>
-            <BottomNavigationAction
-              label="Favorites"
-              icon={<ImportContactsIcon />}
-            />
-            <span style={{ fontWeight: 'bold' }}>
-              Profecías en revelaciones privadas católicas
-            </span>
-          </Link>
-        </BottomNavigation>
+        <Box>
+          <BottomNavigation
+            showLabels
+            value={value}
+            onChange={(event, newValue) => {
+              setValue(newValue);
+            }}
+          >
+            <Link href={'/'} className="content" style={{}}>
+              <BottomNavigationAction
+                label="Recents"
+                icon={<LightbulbCircleIcon />}
+              />
+              <span style={{ fontWeight: 'bold' }}>Virgen María</span>
+            </Link>
+            <Link href={'/private'} className="content" style={{}}>
+              <BottomNavigationAction
+                label="Favorites"
+                icon={<ImportContactsIcon />}
+              />
+              <span style={{ fontWeight: 'bold' }}>
+                Revelaciones privadas católicas
+              </span>
+            </Link>
+          </BottomNavigation>
+        </Box>
       </div>
     </div>
   );

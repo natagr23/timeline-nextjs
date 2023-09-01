@@ -24,9 +24,7 @@ const Footer = () => {
               label="Recents"
               icon={<LightbulbCircleIcon />}
             />
-            <span style={{ fontWeight: 'bold' }}>
-              Profecías de la Virgen María
-            </span>
+            <span style={{ fontWeight: 'bold' }}>Virgen María</span>
           </Link>
           <Link href={'/private'} className="content" style={{}}>
             <BottomNavigationAction
@@ -34,15 +32,12 @@ const Footer = () => {
               icon={<ImportContactsIcon />}
             />
             <span style={{ fontWeight: 'bold' }}>
-              Profecías en revelaciones privadas católicas
+              Revelaciones privadas católicas
             </span>
           </Link>
         </BottomNavigation>
       </div>
       <br />
-      <span style={{ marginBottom: '1.3' + 'em' }}>
-        © 2023 NGR. All rights reserved
-      </span>
     </div>
   );
 };

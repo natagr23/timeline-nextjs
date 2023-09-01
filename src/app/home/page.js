@@ -91,7 +91,7 @@ const Home = () => {
   return (
     <Box
       sx={{
-        background: 'rgb(69, 126, 217)',
+        background: 'rgb(217, 207, 173)',
       }}
     >
       <VerticalTimeline>
@@ -101,7 +101,8 @@ const Home = () => {
               className="vertical-timeline-element--work"
               contentStyle={{
                 background: 'rgb(33, 150, 243)',
-                color: '#fff',
+                color: '#000000',
+                marginTop: '20px',
               }}
               contentArrowStyle={{
                 borderRight: '7px solid  rgb(69, 126, 217)',
@@ -118,15 +119,8 @@ const Home = () => {
               }
               intersectionObserverProps={{ triggerOnce: false }}
             >
-              <Card
-                raised
-                sx={{
-                  maxWidth: 600,
-                  position: 'relative', // Set the parent card as relative positioning
-                  boxShadow: 'none', // Remove the default shadow
-                }}
-              >
-                <Card sx={{ maxWidth: 600 }}>
+              <Card raised>
+                <Card>
                   <CardMedia />
                   <CardContent>
                     <Image
