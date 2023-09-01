@@ -1,53 +1,45 @@
 import React from 'react';
 import Link from 'next/link';
-
-const links = [
-  {
-    id: 1,
-    title: 'Home',
-    url: '/',
-  },
-
-  {
-    id: 3,
-    title: 'Blog',
-    url: '/blog',
-  },
-  {
-    id: 4,
-    title: 'About',
-    url: '/about',
-  },
-  {
-    id: 5,
-    title: 'Contact',
-    url: '/contact',
-  },
-  {
-    id: 6,
-    title: 'Dashboard',
-    url: '/dashboard',
-  },
-
-  {
-    id: 8,
-    title: 'Settings',
-    url: '/settings',
-  },
-];
+import Box from '@mui/material/Box';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import LightbulbCircleIcon from '@mui/icons-material/LightbulbCircle';
+import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 
 const Navbar = ({ children }) => {
+  const [value, setValue] = React.useState(0);
   return (
     <div>
       {children}
-      <br />
-      <Link href="/">Main Navbar</Link>
+
       <div>
-        {links.map((link) => (
-          <Link key={link.id} href={link.url} className="content">
-            {link.title}
+        <Box sx={{ width: 500 }} style={{ alignItems: 'center' }}></Box>
+        <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <Link href={'/'} className="content" style={{}}>
+            <BottomNavigationAction
+              label="Recents"
+              icon={<LightbulbCircleIcon />}
+            />
+            <span style={{ fontWeight: 'bold' }}>
+              Profecías de la Virgen María
+            </span>
           </Link>
-        ))}
+          <Link href={'/private'} className="content" style={{}}>
+            <BottomNavigationAction
+              label="Favorites"
+              icon={<ImportContactsIcon />}
+            />
+            <span style={{ fontWeight: 'bold' }}>
+              Profecías en revelaciones privadas católicas
+            </span>
+          </Link>
+        </BottomNavigation>
       </div>
     </div>
   );

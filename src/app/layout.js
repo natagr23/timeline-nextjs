@@ -12,7 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="App">
-        <h1>Main Layout</h1>
         <Navbar />
         {children}
         <Footer />
