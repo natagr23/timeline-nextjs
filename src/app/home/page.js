@@ -121,9 +121,13 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <span style={{ marginLeft: '1' + 'em' }}>Source:</span>
+                    <span style={{ marginLeft: '1' + 'em', fontSize: '12px' }}>
+                      Fuente:
+                    </span>
                     <Link color="#6b34a6" href={item.link} variant="body2">
-                      <span style={{ marginLeft: '1' + 'em' }}>
+                      <span
+                        style={{ marginLeft: '1' + 'em', fontSize: '11px' }}
+                      >
                         {item.link}
                       </span>
                     </Link>
