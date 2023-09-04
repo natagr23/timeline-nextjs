@@ -16,35 +16,8 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import '/node_modules/flag-icons/css/flag-icons.min.css';
-import data from '../../data/data.json';
 import '@fontsource/roboto/300.css';
-
-import { createTheme } from '@mui/material/styles';
-
-let theme = createTheme({
-  typography: {
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
-  },
-});
-
-theme = createTheme(theme, {
-  palette: {
-    info: {
-      main: theme.palette.secondary.main,
-    },
-  },
-});
+import data from '../../data/data_mother_mary.json';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -108,12 +81,12 @@ const Home = () => {
                 borderRight: '7px solid  rgb(69, 126, 217)',
               }}
               date="2011 - present"
-              iconStyle={{ background: 'rgb(69, 126, 217)', color: '#fff' }}
+              iconStyle={{ background: 'rgb(247,247,247)' }}
               icon={
                 <>
                   <span
                     style={{ marginTop: '1.3' + 'em' }}
-                    class="fi fi-ax fib"
+                    class={item.country_flag}
                   ></span>
                 </>
               }
@@ -164,16 +137,12 @@ const Home = () => {
                       id="panel1d-header"
                     >
                       <Typography fontFamily="Segoe UI Symbol">
-                        Collapsible Group Item #1
+                        Advertencias que ocurrieron
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography fontFamily="Segoe UI Symbol">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
+                        {item.content_collapsible1}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -186,16 +155,12 @@ const Home = () => {
                       id="panel2d-header"
                     >
                       <Typography fontFamily="Segoe UI Symbol">
-                        Collapsible Group Item #2
+                        Advertencias Futuras
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography fontFamily="Segoe UI Symbol">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
+                        {item.content_collapsible2}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -208,16 +173,12 @@ const Home = () => {
                       id="panel3d-header"
                     >
                       <Typography fontFamily="Segoe UI Symbol">
-                        Collapsible Group Item #3
+                        Cómo Mitigarlo
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography fontFamily="Segoe UI Symbol">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse malesuada lacus ex, sit
-                        amet blandit leo lobortis eget.
+                        {item.content_collapsible3}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
