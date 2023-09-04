@@ -96,8 +96,8 @@ const Home = () => {
                 <Card>
                   <CardMedia />
                   <CardContent>
-                    <Image
-                      src="/Virgen_de_guadalupe1.jpeg"
+                    <img
+                      src={item.imageSrc}
                       width={100}
                       alt="green iguana"
                       height={150}
@@ -117,7 +117,7 @@ const Home = () => {
                       color="text.secondary"
                       fontFamily="Segoe UI Symbol"
                     >
-                      {item.content}
+                      {item.summary}
                     </Typography>
                   </CardContent>
                   <CardActions>

@@ -1,9 +1,9 @@
 [
   {
     "country_flag": "fi fi-ar fib",
-    "imageSrc": "/Virgen_de_guadalupe1.jpeg",
+    "imageSrc": "https://www.laautenticadefensa.net/2017/07/09/170709-52.JPG",
     "title": "Title #1",
-    "content": "main content1",
+    "summary": "main content1",
     "link": "https://extract.pics/",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
@@ -11,9 +11,9 @@
   },
   {
     "country_flag": "fi fi-ax fib",
-    "imageSrc": "/image2.jpeg",
+    "imageSrc": "https://www.laautenticadefensa.net/2017/07/09/170709-52.JPG",
     "title": "title Item #2",
-    "content": "main content2",
+    "summary": "main content2",
     "link": "https://extract.pics/",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
@@ -21,9 +21,9 @@
   },
   {
     "country_flag": "fi fi-ax fib",
-    "imageSrc": "/image2.jpeg",
+    "imageSrc": "https://www.laautenticadefensa.net/2017/07/09/170709-52.JPG",
     "title": "title Item #3",
-    "content": "main content3",
+    "summary": "main content3",
     "link": "https://extract.pics/",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
