@@ -80,8 +80,8 @@ const Home = () => {
               contentArrowStyle={{
                 borderRight: '7px solid  rgb(69, 126, 217)',
               }}
-              date="2011 - present"
-              iconStyle={{ background: 'rgb(247,247,247)' }}
+              date={item.date}
+              iconStyle={{ background: 'rgb(33,150,243)' }}
               icon={
                 <>
                   <span
@@ -108,16 +108,14 @@ const Home = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      style={{ marginTop: '0.5' + 'em' }}
+                      style={{
+                        marginTop: '1.6' + 'em',
+                        fontSize: '0.9em',
+                        fontWeight: 'bold',
+                        fontFamily: 'Verdana',
+                      }}
                     >
                       {item.title}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="text.secondary"
-                      fontFamily="Segoe UI Symbol"
-                    >
-                      {item.summary}
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -126,7 +124,10 @@ const Home = () => {
                     </span>
                     <Link color="#6b34a6" href={item.link} variant="body2">
                       <span
-                        style={{ marginLeft: '1' + 'em', fontSize: '11px' }}
+                        style={{
+                          marginLeft: '1' + 'em',
+                          fontSize: '11px',
+                        }}
                       >
                         {item.link}
                       </span>

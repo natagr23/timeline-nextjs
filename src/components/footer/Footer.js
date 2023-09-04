@@ -13,7 +13,7 @@ const Footer = () => {
       <div>
         <Box sx={{ width: 500 }} style={{ alignItems: 'center' }}></Box>
         <BottomNavigation
-          showLabels
+        
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);

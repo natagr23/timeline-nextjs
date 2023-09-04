@@ -17,7 +17,6 @@ const Navbar = ({ children }) => {
       <div>
         <Box>
           <BottomNavigation
-            showLabels
             value={value}
             onChange={(event, newValue) => {
               setValue(newValue);
