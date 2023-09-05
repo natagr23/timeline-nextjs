@@ -11,7 +11,7 @@ const Navbar = ({ children }) => {
   return (
     <div>
       {children}
-      <span style={{ fontWeight: 'bold' }}>
+      <span style={{ fontWeight: 'bold', fontFamily: 'Trebuchet MS' }}>
         Profecías de los últimos tiempos
       </span>
       <div>
@@ -27,14 +27,16 @@ const Navbar = ({ children }) => {
                 label="Recents"
                 icon={<LightbulbCircleIcon />}
               />
-              <span style={{ fontWeight: 'bold' }}>Virgen María</span>
+              <span style={{ fontWeight: 'bold', fontFamily: 'Trebuchet MS' }}>
+                Virgen María
+              </span>
             </Link>
             <Link href={'/private'} className="content" style={{}}>
               <BottomNavigationAction
                 label="Favorites"
                 icon={<ImportContactsIcon />}
               />
-              <span style={{ fontWeight: 'bold' }}>
+              <span style={{ fontWeight: 'bold', fontFamily: 'Trebuchet MS' }}>
                 Revelaciones privadas católicas
               </span>
             </Link>

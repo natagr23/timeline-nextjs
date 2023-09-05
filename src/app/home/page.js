@@ -20,11 +20,11 @@ import '@fontsource/roboto/300.css';
 import data from '../../data/data_mother_mary.json';
 
 const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
+  <MuiAccordion disableGutters elevation={0} rounded {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
   '&:not(:last-child)': {
-    borderBottom: 0,
+    borderBottom: 2,
   },
   '&:before': {
     display: 'none',
@@ -47,6 +47,7 @@ const AccordionSummary = styled((props) => (
   },
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(1),
+    marginTop: '0.2px',
   },
 }));
 
@@ -104,22 +105,27 @@ const Home = () => {
                       style={{ display: 'inline-grid' }}
                     />
                     <Typography
-                      fontFamily="Segoe UI Symbol"
                       gutterBottom
                       variant="h5"
                       component="div"
                       style={{
-                        marginTop: '1.6' + 'em',
-                        fontSize: '0.9em',
+                        marginTop: '1.2' + 'em',
+                        fontSize: '1.0em',
                         fontWeight: 'bold',
-                        fontFamily: 'Verdana',
+                        fontFamily: 'Trebuchet MS',
                       }}
                     >
                       {item.title}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <span style={{ marginLeft: '1' + 'em', fontSize: '12px' }}>
+                    <span
+                      style={{
+                        marginLeft: '1' + 'em',
+                        fontSize: '12px',
+                        fontFamily: 'Trebuchet MS',
+                      }}
+                    >
                       Fuente:
                     </span>
                     <Link color="#6b34a6" href={item.link} variant="body2">
@@ -127,6 +133,7 @@ const Home = () => {
                         style={{
                           marginLeft: '1' + 'em',
                           fontSize: '11px',
+                          fontFamily: 'Trebuchet MS',
                         }}
                       >
                         {item.link}
@@ -141,12 +148,23 @@ const Home = () => {
                       aria-controls="panel1d-content"
                       id="panel1d-header"
                     >
-                      <Typography fontFamily="Segoe UI Symbol">
-                        Advertencias que ocurrieron
+                      <Typography
+                        style={{
+                          fontFamily: 'Trebuchet MS',
+                          fontSize: '0.9em',
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        Prodigios que ocurrieron
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography fontFamily="Segoe UI Symbol">
+                      <Typography
+                        style={{
+                          fontFamily: 'Trebuchet MS',
+                          fontSize: '0.9em',
+                        }}
+                      >
                         {item.content_collapsible1}
                       </Typography>
                     </AccordionDetails>
@@ -159,12 +177,23 @@ const Home = () => {
                       aria-controls="panel2d-content"
                       id="panel2d-header"
                     >
-                      <Typography fontFamily="Segoe UI Symbol">
-                        Advertencias Futuras
+                      <Typography
+                        style={{
+                          fontFamily: 'Trebuchet MS',
+                          fontSize: '0.9em',
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        Advertencias futuras o eventos posteriores
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography fontFamily="Segoe UI Symbol">
+                      <Typography
+                        style={{
+                          fontFamily: 'Trebuchet MS',
+                          fontSize: '0.9em',
+                        }}
+                      >
                         {item.content_collapsible2}
                       </Typography>
                     </AccordionDetails>
@@ -177,12 +206,23 @@ const Home = () => {
                       aria-controls="panel3d-content"
                       id="panel3d-header"
                     >
-                      <Typography fontFamily="Segoe UI Symbol">
+                      <Typography
+                        style={{
+                          fontFamily: 'Trebuchet MS',
+                          fontSize: '0.9em',
+                          fontWeight: 'bold',
+                        }}
+                      >
                         Cómo Mitigarlo
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography fontFamily="Segoe UI Symbol">
+                      <Typography
+                        style={{
+                          fontFamily: 'Trebuchet MS',
+                          fontSize: '0.9em',
+                        }}
+                      >
                         {item.content_collapsible3}
                       </Typography>
                     </AccordionDetails>
