@@ -19,6 +19,11 @@ import '/node_modules/flag-icons/css/flag-icons.min.css';
 import '@fontsource/roboto/300.css';
 import data from '../../data/data_mother_mary.json';
 
+
+export const metadata = {
+  title: 'Profecias de los ultimos tiempos segun apariciones de la Virgen Maria',
+}
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} rounded {...props} />
 ))(({ theme }) => ({
