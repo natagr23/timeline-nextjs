@@ -19,10 +19,10 @@ import '/node_modules/flag-icons/css/flag-icons.min.css';
 import '@fontsource/roboto/300.css';
 import data from '../../data/data_mother_mary.json';
 
-
 export const metadata = {
-  title: 'Profecias de los ultimos tiempos segun apariciones de la Virgen Maria',
-}
+  title:
+    'Profecias de los ultimos tiempos segun apariciones de la Virgen Maria',
+};
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} rounded {...props} />
@@ -228,6 +228,12 @@ const Home = () => {
                           fontSize: '0.9em',
                         }}
                       >
+                        {item.date === 'Chile-1983' && (
+                          <img
+                            src="http://t1.gstatic.com/images?q=tbn:ANd9GcQtYlifFtAflGLmPFCJtk_rkzTpGl5eAzoVqR1B7xU97LgJP5i1"
+                            alt="Imagen de Chile-1983"
+                          />
+                        )}
                         {item.content_collapsible3}
                       </Typography>
                     </AccordionDetails>
