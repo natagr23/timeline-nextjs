@@ -234,6 +234,18 @@ const Home = () => {
                             alt="Imagen de Chile-1983"
                           />
                         )}
+                        {item.date === 'Francia-1972' && (
+                          <>
+                            <img
+                              src="https://bottegadivina.files.wordpress.com/2022/11/santa-cruz-gloriosa-de-la-victoria731.jpg?w=2000&h="
+                              alt="cruz_de_dozule"
+                            />
+                            <img
+                              src="https://bottegadivina.files.wordpress.com/2022/11/91f255ca-0c3e-4c18-9bd7-91829f684890.jpg?w=2000&h="
+                              alt="cruz_de_dozule"
+                            />
+                          </>
+                        )}
                         {item.content_collapsible3}
                       </Typography>
                     </AccordionDetails>
