@@ -19,7 +19,6 @@ import '/node_modules/flag-icons/css/flag-icons.min.css';
 import '@fontsource/roboto/300.css';
 import data from '../../data/data_mother_mary.json';
 
-
 export const metadata = {
   title:
     'Profecias de los ultimos tiempos segun apariciones de la Virgen Maria',
@@ -249,7 +248,8 @@ const Home = () => {
                         )}
                         {item.date === 'Brasil-1991-present' && (
                           <>
-                            <h5>Escapulario Gris de la Paz</h5>
+                            <>Escapulario Gris de la Paz</>
+                            <br />
                             <img
                               src="http://2.bp.blogspot.com/-wf0jQkqDVEc/U4E7_XYrNmI/AAAAAAAABNA/isrNPUdtxlY/s1600/images.jpg"
                               alt="escapulario_gris"
@@ -259,23 +259,106 @@ const Home = () => {
                               }}
                             />
                             <br />
-                            <h5>Santa Medalla de la Paz</h5>
+                            <>Santa Medalla de la Paz</>
                             <img
                               src="http://4.bp.blogspot.com/-5mzH2nUaMfQ/U4E8vpCnV8I/AAAAAAAABNI/b588fauyEpw/s1600/MEDALLA+DE+LA+PAZ.JPG"
                               alt="medalla_paz"
                             />
                             <br />
-                            <h5>Medalla de San José</h5>
+                            <>Medalla de San José</>
                             <img
                               src="http://3.bp.blogspot.com/-QCiAPhVQgj4/U4E9UUiqz_I/AAAAAAAABNQ/omwlTZ9lCyA/s1600/Santa+Medalha+de+S%C3%A3o+Jos%C3%A9+no+C%C3%A9u.jpg"
                               alt="medalla_san_jose"
                             />
+                            <br />
                           </>
                         )}
-                        {item.content_collapsible3}
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: item.content_collapsible3,
+                          }}
+                        />
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
+                  {item.date === 'Brasil-1991-present' && (
+                    <>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible4 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible4 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel4d-content"
+                          id="panel4d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo II
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: item.content_collapsible4,
+                              }}
+                            />
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible5 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible5 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel5d-content"
+                          id="panel5d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo III
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: item.content_collapsible5,
+                              }}
+                            />
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </>
+                  )}
                 </Card>
               </Card>
             </VerticalTimelineElement>
