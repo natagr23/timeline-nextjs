@@ -229,10 +229,12 @@ const Home = () => {
                         }}
                       >
                         {item.date === 'Chile-1983' && (
-                          <img
-                            src="http://t1.gstatic.com/images?q=tbn:ANd9GcQtYlifFtAflGLmPFCJtk_rkzTpGl5eAzoVqR1B7xU97LgJP5i1"
-                            alt="Imagen de Chile-1983"
-                          />
+                          <>
+                            <img
+                              src="http://t1.gstatic.com/images?q=tbn:ANd9GcQtYlifFtAflGLmPFCJtk_rkzTpGl5eAzoVqR1B7xU97LgJP5i1"
+                              alt="Imagen de Chile-1983"
+                            />
+                          </>
                         )}
                         {item.date === 'Francia-1972' && (
                           <>
@@ -249,7 +251,7 @@ const Home = () => {
                         {item.date === 'Brasil-1991-present' && (
                           <>
                             <>Escapulario Gris de la Paz</>
-                            <br />
+
                             <img
                               src="http://2.bp.blogspot.com/-wf0jQkqDVEc/U4E7_XYrNmI/AAAAAAAABNA/isrNPUdtxlY/s1600/images.jpg"
                               alt="escapulario_gris"
@@ -258,26 +260,22 @@ const Home = () => {
                                 marginBottom: '20px',
                               }}
                             />
-                            <br />
+
                             <>Santa Medalla de la Paz</>
                             <img
                               src="http://4.bp.blogspot.com/-5mzH2nUaMfQ/U4E8vpCnV8I/AAAAAAAABNI/b588fauyEpw/s1600/MEDALLA+DE+LA+PAZ.JPG"
                               alt="medalla_paz"
                             />
-                            <br />
+
                             <>Medalla de San José</>
                             <img
                               src="http://3.bp.blogspot.com/-QCiAPhVQgj4/U4E9UUiqz_I/AAAAAAAABNQ/omwlTZ9lCyA/s1600/Santa+Medalha+de+S%C3%A3o+Jos%C3%A9+no+C%C3%A9u.jpg"
                               alt="medalla_san_jose"
                             />
-                            <br />
                           </>
                         )}
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: item.content_collapsible3,
-                          }}
-                        />
+
+                        {item.content_collapsible3}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -312,11 +310,7 @@ const Home = () => {
                               fontSize: '0.9em',
                             }}
                           >
-                            <div
-                              dangerouslySetInnerHTML={{
-                                __html: item.content_collapsible4,
-                              }}
-                            />
+                            {item.content_collapsible4}
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -349,11 +343,14 @@ const Home = () => {
                               fontSize: '0.9em',
                             }}
                           >
-                            <div
-                              dangerouslySetInnerHTML={{
-                                __html: item.content_collapsible5,
-                              }}
-                            />
+                            <>
+                              {item.content_collapsible5.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line}
+                                  <br />
+                                </React.Fragment>
+                              ))}
+                            </>
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
