@@ -175,7 +175,13 @@ const Home = () => {
                           Array.isArray(item.content_collapsible1)
                             ? item.content_collapsible1.map((line, index) => (
                                 <React.Fragment key={index}>
-                                  {line}
+                                  {line.match(
+                                    /(13 SECRETOS PARA LA HUMANIDAD|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                  ) ? (
+                                    <strong>{line}</strong>
+                                  ) : (
+                                    line
+                                  )}
                                   <br />
                                 </React.Fragment>
                               ))
@@ -214,7 +220,13 @@ const Home = () => {
                           Array.isArray(item.content_collapsible2)
                             ? item.content_collapsible2.map((line, index) => (
                                 <React.Fragment key={index}>
-                                  {line}
+                                  {line.match(
+                                    /(Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                  ) ? (
+                                    <strong>{line}</strong>
+                                  ) : (
+                                    line
+                                  )}
                                   <br />
                                 </React.Fragment>
                               ))
@@ -300,7 +312,13 @@ const Home = () => {
                           Array.isArray(item.content_collapsible3)
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
-                                  {line}
+                                  {line.match(
+                                    /(EL ESCAPULARIO GRIS DE LA PAZ|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                  ) ? (
+                                    <strong>{line}</strong>
+                                  ) : (
+                                    line
+                                  )}
                                   <br />
                                 </React.Fragment>
                               ))
@@ -346,7 +364,13 @@ const Home = () => {
                                 ? item.content_collapsible4.map(
                                     (line, index) => (
                                       <React.Fragment key={index}>
-                                        {line}
+                                        {line.match(
+                                          /(Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : (
+                                          line
+                                        )}
                                         <br />
                                       </React.Fragment>
                                     )
