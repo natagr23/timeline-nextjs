@@ -170,7 +170,17 @@ const Home = () => {
                           fontSize: '0.9em',
                         }}
                       >
-                        {item.content_collapsible1}
+                        <>
+                          {item.content_collapsible1 &&
+                          Array.isArray(item.content_collapsible1)
+                            ? item.content_collapsible1.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line}
+                                  <br />
+                                </React.Fragment>
+                              ))
+                            : item.content_collapsible1}
+                        </>
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -199,7 +209,17 @@ const Home = () => {
                           fontSize: '0.9em',
                         }}
                       >
-                        {item.content_collapsible2}
+                        <>
+                          {item.content_collapsible2 &&
+                          Array.isArray(item.content_collapsible2)
+                            ? item.content_collapsible2.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line}
+                                  <br />
+                                </React.Fragment>
+                              ))
+                            : item.content_collapsible2}
+                        </>
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -275,7 +295,17 @@ const Home = () => {
                           </>
                         )}
 
-                        {item.content_collapsible3}
+                        <>
+                          {item.content_collapsible3 &&
+                          Array.isArray(item.content_collapsible3)
+                            ? item.content_collapsible3.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line}
+                                  <br />
+                                </React.Fragment>
+                              ))
+                            : item.content_collapsible3}
+                        </>
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -310,7 +340,19 @@ const Home = () => {
                               fontSize: '0.9em',
                             }}
                           >
-                            {item.content_collapsible4}
+                            <>
+                              {item.content_collapsible4 &&
+                              Array.isArray(item.content_collapsible4)
+                                ? item.content_collapsible4.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible4}
+                            </>
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -344,12 +386,17 @@ const Home = () => {
                             }}
                           >
                             <>
-                              {item.content_collapsible5.map((line, index) => (
-                                <React.Fragment key={index}>
-                                  {line}
-                                  <br />
-                                </React.Fragment>
-                              ))}
+                              {item.content_collapsible5 &&
+                              Array.isArray(item.content_collapsible5)
+                                ? item.content_collapsible5.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible5}
                             </>
                           </Typography>
                         </AccordionDetails>
