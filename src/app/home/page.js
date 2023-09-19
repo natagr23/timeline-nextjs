@@ -391,7 +391,13 @@ const Home = () => {
                                 ? item.content_collapsible5.map(
                                     (line, index) => (
                                       <React.Fragment key={index}>
-                                        {line}
+                                        {line.match(
+                                          /(Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : (
+                                          line
+                                        )}
                                         <br />
                                       </React.Fragment>
                                     )
