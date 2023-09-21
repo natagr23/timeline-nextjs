@@ -282,7 +282,7 @@ const Home = () => {
                         )}
                         {item.date === 'Brasil-1991-present' && (
                           <>
-                            <>Escapulario Gris de la Paz</>
+                            <strong>Escapulario Gris de la Paz</strong>
                             <br />
                             <img
                               src="http://2.bp.blogspot.com/-wf0jQkqDVEc/U4E7_XYrNmI/AAAAAAAABNA/isrNPUdtxlY/s1600/images.jpg"
@@ -295,7 +295,7 @@ const Home = () => {
                               }}
                             />
                             <br />
-                            <>Santa Medalla de la Paz</>
+                            <strong>Santa Medalla de la Paz</strong>
                             <br />
                             <img
                               src="http://4.bp.blogspot.com/-5mzH2nUaMfQ/U4E8vpCnV8I/AAAAAAAABNI/b588fauyEpw/s1600/MEDALLA+DE+LA+PAZ.JPG"
@@ -308,7 +308,7 @@ const Home = () => {
                               }}
                             />
                             <br />
-                            <>Medalla de San José</>
+                            <strong>Medalla de San José</strong>
                             <br />
                             <img
                               src="http://3.bp.blogspot.com/-QCiAPhVQgj4/U4E9UUiqz_I/AAAAAAAABNQ/omwlTZ9lCyA/s1600/Santa+Medalha+de+S%C3%A3o+Jos%C3%A9+no+C%C3%A9u.jpg"
@@ -329,7 +329,7 @@ const Home = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Promesas de Nuestro Señor Jesús|SETENA |Veinte promesas del Amantísimo Corazón de San José para los que usen devotamente y conforme su deseo, Su Santa Medalla|La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : (
@@ -381,7 +381,7 @@ const Home = () => {
                                     (line, index) => (
                                       <React.Fragment key={index}>
                                         {line.match(
-                                          /(Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                          /(ROSARIO DE LA PAZ|Primer Dia de la SETENA |Segundo Día de la SETENA|HORA DE LA PAZ|ROSARIO DE LA EUCARISTÍA|ORACIÓN FINAL|CONSAGRACIONES CONSAGRACIÓN AL SAGRADO CORAZÓN DE JESÚS|CONSAGRACIÓN AL INMACULADO CORAZÓN DE MARÍA|CONSAGRACIÓN AL ESPÍRITU SANTO|Tercer Día de la SETENA|Cuarto Día de la SETENA|Quinto Día de la SETENA|Sexto Día de la SETENA|Séptimo Día de la SETENA)/
                                         ) ? (
                                           <strong>{line}</strong>
                                         ) : (
