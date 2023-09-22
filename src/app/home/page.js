@@ -432,7 +432,7 @@ const Home = () => {
                                     (line, index) => (
                                       <React.Fragment key={index}>
                                         {line.match(
-                                          /(Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                          /(Hora del Espíritu Santo |Hora de los Ángeles de Dios|Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                         ) ? (
                                           <strong>{line}</strong>
                                         ) : (
@@ -443,6 +443,57 @@ const Home = () => {
                                     )
                                   )
                                 : item.content_collapsible5}
+                            </>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible6 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible6 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel5d-content"
+                          id="panel5d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo IV
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <>
+                              {item.content_collapsible6 &&
+                              Array.isArray(item.content_collapsible6)
+                                ? item.content_collapsible6.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line.match(
+                                          /(Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : (
+                                          line
+                                        )}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible6}
                             </>
                           </Typography>
                         </AccordionDetails>
