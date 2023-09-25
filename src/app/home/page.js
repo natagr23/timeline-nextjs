@@ -176,9 +176,15 @@ const Home = () => {
                             ? item.content_collapsible1.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(13 SECRETOS PARA LA HUMANIDAD|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|SETENA |Veinte promesas del Amantísimo Corazón de San José para los que usen devotamente y conforme su deseo, Su Santa Medalla|La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
+                                  ) : line.match(/(Fuente:)/i) ? (
+                                    <Link
+                                      href={line.split(/(Fuente:)/i)[2].trim()}
+                                    >
+                                      {line}
+                                    </Link>
                                   ) : (
                                     line
                                   )}
@@ -221,9 +227,15 @@ const Home = () => {
                             ? item.content_collapsible2.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|SETENA |Veinte promesas del Amantísimo Corazón de San José para los que usen devotamente y conforme su deseo, Su Santa Medalla|La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
+                                  ) : line.match(/(Fuente:)/i) ? (
+                                    <Link
+                                      href={line.split(/(Fuente:)/i)[2].trim()}
+                                    >
+                                      {line}
+                                    </Link>
                                   ) : (
                                     line
                                   )}
@@ -265,61 +277,41 @@ const Home = () => {
                             <img
                               src="http://t1.gstatic.com/images?q=tbn:ANd9GcQtYlifFtAflGLmPFCJtk_rkzTpGl5eAzoVqR1B7xU97LgJP5i1"
                               alt="Imagen de Chile-1983"
+                              style={{
+                                display: 'inline-grid',
+                                marginBottom: '20px',
+                                marginTop: '15px',
+                                width: '200px',
+                              }}
                             />
                           </>
                         )}
                         {item.date === 'Francia-1972' && (
                           <>
+                            <strong>Cruz de Amor</strong>
+                            <br />
                             <img
                               src="https://bottegadivina.files.wordpress.com/2022/11/santa-cruz-gloriosa-de-la-victoria731.jpg?w=2000&h="
                               alt="cruz_de_dozule"
+                              style={{
+                                display: 'inline-grid',
+                                marginBottom: '20px',
+                                marginTop: '15px',
+                                width: '350px',
+                              }}
                             />
+                            <br />
                             <img
                               src="https://bottegadivina.files.wordpress.com/2022/11/91f255ca-0c3e-4c18-9bd7-91829f684890.jpg?w=2000&h="
                               alt="cruz_de_dozule"
-                            />
-                          </>
-                        )}
-                        {item.date === 'Brasil-1991-present' && (
-                          <>
-                            <strong>Escapulario Gris de la Paz</strong>
-                            <br />
-                            <img
-                              src="http://2.bp.blogspot.com/-wf0jQkqDVEc/U4E7_XYrNmI/AAAAAAAABNA/isrNPUdtxlY/s1600/images.jpg"
-                              alt="escapulario_gris"
                               style={{
                                 display: 'inline-grid',
                                 marginBottom: '20px',
                                 marginTop: '15px',
-                                width: '200px',
+                                width: '350px',
                               }}
                             />
                             <br />
-                            <strong>Santa Medalla de la Paz</strong>
-                            <br />
-                            <img
-                              src="http://4.bp.blogspot.com/-5mzH2nUaMfQ/U4E8vpCnV8I/AAAAAAAABNI/b588fauyEpw/s1600/MEDALLA+DE+LA+PAZ.JPG"
-                              alt="medalla_paz"
-                              style={{
-                                display: 'inline-grid',
-                                marginBottom: '20px',
-                                marginTop: '15px',
-                                width: '200px',
-                              }}
-                            />
-                            <br />
-                            <strong>Medalla de San José</strong>
-                            <br />
-                            <img
-                              src="http://3.bp.blogspot.com/-QCiAPhVQgj4/U4E9UUiqz_I/AAAAAAAABNQ/omwlTZ9lCyA/s1600/Santa+Medalha+de+S%C3%A3o+Jos%C3%A9+no+C%C3%A9u.jpg"
-                              alt="medalla_san_jose"
-                              style={{
-                                display: 'inline-grid',
-                                marginBottom: '20px',
-                                marginTop: '15px',
-                                width: '200px',
-                              }}
-                            />
                           </>
                         )}
 
@@ -329,9 +321,15 @@ const Home = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Promesas de Nuestro Señor Jesús|SETENA |Veinte promesas del Amantísimo Corazón de San José para los que usen devotamente y conforme su deseo, Su Santa Medalla|La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
+                                  ) : line.match(/(Fuente:)/i) ? (
+                                    <Link
+                                      href={line.split(/(Fuente:)/i)[2].trim()}
+                                    >
+                                      {line}
+                                    </Link>
                                   ) : (
                                     line
                                   )}
@@ -483,7 +481,7 @@ const Home = () => {
                                     (line, index) => (
                                       <React.Fragment key={index}>
                                         {line.match(
-                                          /(Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                          /(Hora del Sagrado Corazón de Jesús |Hora de los Santos de Dios|Hora de la Eucaristía |Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                         ) ? (
                                           <strong>{line}</strong>
                                         ) : (
