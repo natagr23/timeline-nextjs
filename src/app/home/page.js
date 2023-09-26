@@ -227,7 +227,7 @@ const Home = () => {
                             ? item.content_collapsible2.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Advertencias|Fuente de Naju|Sobre la importancia de la Eucaristía|Sobre el aborto y la inhumana actuación que supone el mismo|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Habrá un Segundo Pentecostés|El perfume y el óleo|Advertencias|Fuente de Naju|Sobre la importancia de la Eucaristía|Sobre el aborto y la inhumana actuación que supone el mismo|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
