@@ -176,7 +176,7 @@ const Home = () => {
                             ? item.content_collapsible1.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|SETENA |Veinte promesas del Amantísimo Corazón de San José para los que usen devotamente y conforme su deseo, Su Santa Medalla|La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -227,7 +227,7 @@ const Home = () => {
                             ? item.content_collapsible2.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|SETENA |Veinte promesas del Amantísimo Corazón de San José para los que usen devotamente y conforme su deseo, Su Santa Medalla|La Santa  Medalla de la Paz y la Medalla de San Jose|El Escapulario Gris de la Paz|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Advertencias|Fuente de Naju|Sobre la importancia de la Eucaristía|Sobre el aborto y la inhumana actuación que supone el mismo|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -321,7 +321,7 @@ const Home = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
