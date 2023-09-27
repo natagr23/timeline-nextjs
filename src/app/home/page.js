@@ -176,7 +176,7 @@ const Home = () => {
                             ? item.content_collapsible1.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Difusión de los mensajes|Los 5 años siguientes|Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -227,7 +227,7 @@ const Home = () => {
                             ? item.content_collapsible2.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Habrá un Segundo Pentecostés|El perfume y el óleo|Advertencias|Fuente de Naju|Sobre la importancia de la Eucaristía|Sobre el aborto y la inhumana actuación que supone el mismo|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Los secretos de la Salette|Palabras Graves de Juan Pablo II acerca del Tercer Secreto|Los tres secretos de Fátima|Primer secreto de Fátima|Segundo secreto de Fátima|Tercer secreto de Fátima |Sacratísimo Corazón Eucarístico de Jesús en Tí confío|Habrá un Segundo Pentecostés|El perfume y el óleo|Advertencias|Fuente de Naju|Sobre la importancia de la Eucaristía|Sobre el aborto y la inhumana actuación que supone el mismo|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -321,7 +321,7 @@ const Home = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
