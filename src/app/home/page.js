@@ -176,7 +176,7 @@ const Home = () => {
                             ? item.content_collapsible1.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Difusión de los mensajes|Los 5 años siguientes|Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Las terribles calamidades que fueron anunciadas se empezaron a cumplir|Difusión de los mensajes|Los 5 años siguientes|Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -321,7 +321,7 @@ const Home = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(El mismo mensaje ha dado Nuestra Señora en Lourdes y en Fátima: oración, penitencia y consagración a su Inmaculado Corazón.| Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
