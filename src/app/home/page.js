@@ -247,6 +247,7 @@ const Home = () => {
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
+
                   <Accordion
                     expanded={expanded === item.content_collapsible3 + index}
                     onChange={handleChange(item.content_collapsible3 + index)}
@@ -341,6 +342,7 @@ const Home = () => {
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
+
                   {item.date === 'Brasil-1991-present' && (
                     <>
                       <Accordion

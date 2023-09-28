@@ -105,7 +105,7 @@ const Private = () => {
                     <img
                       src={item.imageSrc}
                       width={100}
-                      alt="green iguana"
+                      alt="mother mary"
                       height={150}
                       style={{ display: 'inline-grid' }}
                     />
@@ -170,7 +170,29 @@ const Private = () => {
                           fontSize: '0.9em',
                         }}
                       >
-                        {item.content_collapsible1}
+                        <>
+                          {item.content_collapsible1 &&
+                          Array.isArray(item.content_collapsible1)
+                            ? item.content_collapsible1.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line.match(
+                                    /(Por qué murió Anneliese|La Virgen María se le aparece de nuevo para pedirle penitencia por las almas que se pierden, y contesta que sí|La Virgen María se aparece a Anneliese y la cura|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                  ) ? (
+                                    <strong>{line}</strong>
+                                  ) : line.match(/(Fuente:)/i) ? (
+                                    <Link
+                                      href={line.split(/(Fuente:)/i)[2].trim()}
+                                    >
+                                      {line}
+                                    </Link>
+                                  ) : (
+                                    line
+                                  )}
+                                  <br />
+                                </React.Fragment>
+                              ))
+                            : item.content_collapsible1}
+                        </>
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -199,7 +221,29 @@ const Private = () => {
                           fontSize: '0.9em',
                         }}
                       >
-                        {item.content_collapsible2}
+                        <>
+                          {item.content_collapsible2 &&
+                          Array.isArray(item.content_collapsible2)
+                            ? item.content_collapsible2.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line.match(
+                                    /(Exorcismo No.1 |Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                  ) ? (
+                                    <strong>{line}</strong>
+                                  ) : line.match(/(Fuente:)/i) ? (
+                                    <Link
+                                      href={line.split(/(Fuente:)/i)[2].trim()}
+                                    >
+                                      {line}
+                                    </Link>
+                                  ) : (
+                                    line
+                                  )}
+                                  <br />
+                                </React.Fragment>
+                              ))
+                            : item.content_collapsible2}
+                        </>
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -211,15 +255,32 @@ const Private = () => {
                       aria-controls="panel3d-content"
                       id="panel3d-header"
                     >
-                      <Typography
-                        style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
-                          fontWeight: 'bold',
-                        }}
-                      >
-                        Cómo Mitigarlo
-                      </Typography>
+                      {item.date === 'Alemania-1952' && (
+                        <>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Advertencias futuras o eventos posteriores II
+                          </Typography>{' '}
+                        </>
+                      )}
+                      {item.date !== 'Alemania-1952' && (
+                        <>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo
+                          </Typography>
+                        </>
+                      )}
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography
@@ -228,10 +289,233 @@ const Private = () => {
                           fontSize: '0.9em',
                         }}
                       >
-                        {item.content_collapsible3}
+                        {item.date === 'Chile-1983' && (
+                          <>
+                            <img
+                              src="http://t1.gstatic.com/images?q=tbn:ANd9GcQtYlifFtAflGLmPFCJtk_rkzTpGl5eAzoVqR1B7xU97LgJP5i1"
+                              alt="Imagen de Chile-1983"
+                              style={{
+                                display: 'inline-grid',
+                                marginBottom: '20px',
+                                marginTop: '15px',
+                                width: '200px',
+                              }}
+                            />
+                          </>
+                        )}
+                        {item.date === 'Francia-1972' && (
+                          <>
+                            <strong>Cruz de Amor</strong>
+                            <br />
+                            <img
+                              src="https://bottegadivina.files.wordpress.com/2022/11/santa-cruz-gloriosa-de-la-victoria731.jpg?w=2000&h="
+                              alt="cruz_de_dozule"
+                              style={{
+                                display: 'inline-grid',
+                                marginBottom: '20px',
+                                marginTop: '15px',
+                                width: '350px',
+                              }}
+                            />
+                            <br />
+                            <img
+                              src="https://bottegadivina.files.wordpress.com/2022/11/91f255ca-0c3e-4c18-9bd7-91829f684890.jpg?w=2000&h="
+                              alt="cruz_de_dozule"
+                              style={{
+                                display: 'inline-grid',
+                                marginBottom: '20px',
+                                marginTop: '15px',
+                                width: '350px',
+                              }}
+                            />
+                            <br />
+                          </>
+                        )}
+
+                        <>
+                          {item.content_collapsible3 &&
+                          Array.isArray(item.content_collapsible3)
+                            ? item.content_collapsible3.map((line, index) => (
+                                <React.Fragment key={index}>
+                                  {line.match(
+                                    /(Las Uvas de San Damiano|Oración de reparación a Dios|El mismo mensaje ha dado Nuestra Señora en Lourdes y en Fátima: oración, penitencia y consagración a su Inmaculado Corazón.|Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                  ) ? (
+                                    <strong>{line}</strong>
+                                  ) : line.match(/(Fuente:)/i) ? (
+                                    <Link
+                                      href={line.split(/(Fuente:)/i)[2].trim()}
+                                    >
+                                      {line}
+                                    </Link>
+                                  ) : (
+                                    line
+                                  )}
+                                  <br />
+                                </React.Fragment>
+                              ))
+                            : item.content_collapsible3}
+                        </>
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
+
+                  {item.date === 'Brasil-1991-present' && (
+                    <>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible4 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible4 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel4d-content"
+                          id="panel4d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo II
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <>
+                              {item.content_collapsible4 &&
+                              Array.isArray(item.content_collapsible4)
+                                ? item.content_collapsible4.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line.match(
+                                          /(ROSARIO DE LA PAZ|Primer Dia de la SETENA |Segundo Día de la SETENA|HORA DE LA PAZ|ROSARIO DE LA EUCARISTÍA|ORACIÓN FINAL|CONSAGRACIONES CONSAGRACIÓN AL SAGRADO CORAZÓN DE JESÚS|CONSAGRACIÓN AL INMACULADO CORAZÓN DE MARÍA|CONSAGRACIÓN AL ESPÍRITU SANTO|Tercer Día de la SETENA|Cuarto Día de la SETENA|Quinto Día de la SETENA|Sexto Día de la SETENA|Séptimo Día de la SETENA)/
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : (
+                                          line
+                                        )}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible4}
+                            </>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible5 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible5 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel5d-content"
+                          id="panel5d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo III
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <>
+                              {item.content_collapsible5 &&
+                              Array.isArray(item.content_collapsible5)
+                                ? item.content_collapsible5.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line.match(
+                                          /(Hora del Espíritu Santo |Hora de los Ángeles de Dios|Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : (
+                                          line
+                                        )}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible5}
+                            </>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible6 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible6 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel5d-content"
+                          id="panel5d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo IV
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <>
+                              {item.content_collapsible6 &&
+                              Array.isArray(item.content_collapsible6)
+                                ? item.content_collapsible6.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line.match(
+                                          /(Hora del Sagrado Corazón de Jesús |Hora de los Santos de Dios|Hora de la Eucaristía |Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : (
+                                          line
+                                        )}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible6}
+                            </>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </>
+                  )}
                 </Card>
               </Card>
             </VerticalTimelineElement>
