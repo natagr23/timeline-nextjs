@@ -255,7 +255,8 @@ const Private = () => {
                       aria-controls="panel3d-content"
                       id="panel3d-header"
                     >
-                      {item.date === 'Alemania-1952' && (
+                      {(item.date === 'Alemania-1952' ||
+                        item.date === 'Suiza-1937') && (
                         <>
                           <Typography
                             style={{
@@ -268,19 +269,20 @@ const Private = () => {
                           </Typography>{' '}
                         </>
                       )}
-                      {item.date !== 'Alemania-1952' && (
-                        <>
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Cómo Mitigarlo
-                          </Typography>
-                        </>
-                      )}
+                      {item.date !== 'Alemania-1952' &&
+                        item.date !== 'Suiza-1937' && (
+                          <>
+                            <Typography
+                              style={{
+                                fontFamily: 'Trebuchet MS',
+                                fontSize: '0.9em',
+                                fontWeight: 'bold',
+                              }}
+                            >
+                              Cómo Mitigarlo
+                            </Typography>
+                          </>
+                        )}
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography
@@ -516,7 +518,8 @@ const Private = () => {
                       </Accordion>
                     </>
                   )}
-                  {item.date === 'Alemania-1952' && (
+                  {(item.date === 'Alemania-1952' ||
+                    item.date === 'Suiza-1937') && (
                     <>
                       <Accordion
                         expanded={
