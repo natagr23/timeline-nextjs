@@ -227,7 +227,7 @@ const Private = () => {
                             ? item.content_collapsible2.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Exorcismo No.1 |Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Exorcismo No. 4|Exorcismo No. 3|Exorcismo No.2|Exorcismo No.1 |Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -338,7 +338,7 @@ const Private = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Las Uvas de San Damiano|Oración de reparación a Dios|El mismo mensaje ha dado Nuestra Señora en Lourdes y en Fátima: oración, penitencia y consagración a su Inmaculado Corazón.|Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Exorcismo No. 10|Exorcismo No. 9|Exorcismo No. 8|Exorcismo No. 7|Exorcismo No. 6|Exorcismo No. 5|Las Uvas de San Damiano|Oración de reparación a Dios|El mismo mensaje ha dado Nuestra Señora en Lourdes y en Fátima: oración, penitencia y consagración a su Inmaculado Corazón.|Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -510,6 +510,69 @@ const Private = () => {
                                     )
                                   )
                                 : item.content_collapsible6}
+                            </>
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </>
+                  )}
+                  {item.date === 'Alemania-1952' && (
+                    <>
+                      <Accordion
+                        expanded={
+                          expanded === item.content_collapsible4 + index
+                        }
+                        onChange={handleChange(
+                          item.content_collapsible4 + index
+                        )}
+                      >
+                        <AccordionSummary
+                          aria-controls="panel4d-content"
+                          id="panel4d-header"
+                        >
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Cómo Mitigarlo
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography
+                            style={{
+                              fontFamily: 'Trebuchet MS',
+                              fontSize: '0.9em',
+                            }}
+                          >
+                            <>
+                              {item.content_collapsible4 &&
+                              Array.isArray(item.content_collapsible4)
+                                ? item.content_collapsible4.map(
+                                    (line, index) => (
+                                      <React.Fragment key={index}>
+                                        {line.match(
+                                          /(Coronilla en honor a San Miguel Arcángel|Coronilla de las Lágrimas y Sangre|Séptimo Día de la SETENA)/
+                                        ) ? (
+                                          <strong>{line}</strong>
+                                        ) : line.match(/(Fuente:)/i) ? (
+                                          <Link
+                                            href={line
+                                              .split(/(Fuente:)/i)[2]
+                                              .trim()}
+                                          >
+                                            {line}
+                                          </Link>
+                                        ) : (
+                                          line
+                                        )}
+                                        <br />
+                                      </React.Fragment>
+                                    )
+                                  )
+                                : item.content_collapsible4}
                             </>
                           </Typography>
                         </AccordionDetails>
