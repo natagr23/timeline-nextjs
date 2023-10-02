@@ -18,11 +18,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import '/node_modules/flag-icons/css/flag-icons.min.css';
 import '@fontsource/roboto/300.css';
 import data from '../../data/data_private_revelations.json';
-
-export const metadata = {
-  title:
-    'Profecias de los ultimos tiempos segun revelaciones privadas catolicas',
-};
+import { metadata } from './metadata';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} rounded {...props} />
@@ -62,6 +58,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 const Private = () => {
+  const pageTitle = metadata.title.default;
   const [expanded, setExpanded] = React.useState('');
 
   const handleChange = (panel) => (event, newExpanded) => {
