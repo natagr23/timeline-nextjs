@@ -4,14 +4,17 @@ import { Inter } from 'next/font/google';
 import '@aws-amplify/ui-react/styles.css';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
-import { metadata } from './metadata';
+import { getMetadata } from './metadata';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }) {
-  const pageTitle = metadata.title.default;
+  const { title } = getMetadata();
   return (
     <html lang="en">
       <body className="App">
+        <head>
+          <title>{title.default}</title>
+        </head>
         <Navbar />
         {children}
         <Footer />
