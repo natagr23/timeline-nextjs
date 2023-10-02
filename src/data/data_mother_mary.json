@@ -3,7 +3,7 @@
     "date": "Argentina-1990",
     "country_flag": "fi fi-ar fib",
     "imageSrc": "https://www.todowebsalta.com.ar/wp-content/uploads/2021/07/virgen-del-cerro-en-pandemia-350x200.jpg",
-    "title": "Virgen del Cerro Salta, año 1990-2003",
+    "title": "Virgen del Cerro Salta, Argentina, año 1990-2003",
     "link": "http://www.inmaculadamadre-salta.org/obra/index.php?option=com_content&view=article&id=70&Itemid=116&lang=es",
     "content_collapsible1": [
       "En el año 1990 comienzan las apariciones de la Santísima Virgen en Salta ( República Argentina) a una mujer.",
@@ -65,10 +65,10 @@
     ]
   },
   {
-    "date": "Corea-1985-present",
+    "date": "Corea del Sur-1985-present",
     "country_flag": "fi fi-kr fib",
     "imageSrc": "https://cdn.imweb.me/thumbnail/20210414/96b2cc674f44a.jpg",
-    "title": "Nuestra Señora de Naju, año 1985",
+    "title": "Nuestra Señora de Naju, Corea del Sur, 1985-presente",
     "link": "http://sp.najumary.or.kr",
     "content_collapsible1": [
       "El lugar es Naju, pequeña población de Corea del Sur (situada a 350 kilómetros al sudoeste de Seúl) donde nació, en 1947, Julia Kim. Vivió en extrema pobreza y se casó, en 1972, con Julio Kim. Su salud era, digamos, bastante precaria y, como era de esperar, buscó solución en la medicina. No había, al parecer, curación para ella. Pero no todo está dicho cuando interviene María, Madre de Dios. Es más, entonces es cuando todo empieza a decirse.",
@@ -202,7 +202,7 @@
     "date": "Chile-1983",
     "country_flag": "fi fi-cl fib",
     "imageSrc": "https://www.laautenticadefensa.net/2017/07/09/170709-52.JPG",
-    "title": "Vírgen de Peñablanca, 1983-1988",
+    "title": "Vírgen de Peñablanca, Chile 1983-1988",
     "link": "https://www.virgenmariachile.cl/wp-content/uploads/2021/08/MaL-Paredes-1-732.pdf",
     "content_collapsible1": [
       "Entre junio de 1983 y junio de 1988, la Santísima Virgen se apareció en el Monte Carmelo de Peñablanca Chile, en las afueras de Valparaíso, a Miguel Ángel Poblete, un joven pobre e iletrado de 17 años.",
@@ -356,10 +356,30 @@
     ]
   },
   {
+    "date": "España-1981",
+    "country_flag": "fi fi-es fib",
+    "imageSrc": "https://virgendolorosaelescorial.com/wp-content/uploads/2020/06/IMG_8125-2-1.jpg",
+    "title": "Virgen Dolorosa El Escorial, España, año 1981-1985",
+    "link": "https://virgendolorosaelescorial.com/mensajes/",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
     "date": "Bosnia-Herzegovina-1981",
     "country_flag": "fi fi-ba fib",
     "imageSrc": "https://www.holyart.es/blog/wp-content/uploads/sites/13/2023/05/virgen-medjugorje-podbrdo-11.jpg",
     "title": "Nuestra Señora de la Paz, Medjugorje, Bosnia-Herzegovina, año 1981-1982",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
+    "date": "Japón-1973",
+    "country_flag": "fi fi-jp fib",
+    "imageSrc": "https://imagenes.catholic.net/imagenes_db/dd4a59_ns-akita.jpg",
+    "title": "Nuestra Señora de Akita, Japón, año 1973-1981",
     "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
     "content_collapsible1": ["title 1"],
     "content_collapsible2": ["title 2"],
@@ -409,10 +429,20 @@
     ]
   },
   {
+    "date": "España-1968",
+    "country_flag": "fi fi-es fib",
+    "imageSrc": "https://www.holyart.es/blog/wp-content/uploads/sites/13/2023/05/virgen-medjugorje-podbrdo-11.jpg",
+    "title": "Virgen Pura Dolorosa, Umbe, España, año 1968-1989",
+    "link": "https://www.virgendeumbe.org/",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
     "date": "Italia-1962",
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://forosdelavirgen.org/wp-content/uploads/2014/09/madonna-de-las-sosas-san-damiano.jpg",
-    "title": "Nuestra Señora de las Rosas de San Damiano, año 1962-1981",
+    "title": "Nuestra Señora de las Rosas de San Damiano, Italia, 1962-1981",
     "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
     "link2": "https://www.deunanube.com/2018/uvas-benditas-guia-practica/",
     "link3": "https://www.ioamogesu.com/es/devoci%C3%B3n-a-mar%C3%ADa-la-dama-de-las-rosas-y-el-agua-milagrosa-de-san-damiano/",
@@ -517,6 +547,16 @@
     ]
   },
   {
+    "date": "Holanda-1945",
+    "country_flag": "fi fi-nl fib",
+    "imageSrc": "https://www.corazones.org/maria/z_pueblos_todos.jpg",
+    "title": "La Señora de Todos los Pueblos, Amsterdam, Holanda, año 1945-1952",
+    "link": "https://mariaporelmundo.com/apariciones-marianas-en-belgica-y-holanda/senora-de-todos-los-pueblos/",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
     "date": "Portugal-1917",
     "country_flag": "fi fi-pt fib",
     "imageSrc": "https://webcatolicodejavier.org/VirgenDeFatima3.jpg",
@@ -602,6 +642,16 @@
       "",
       "Fuente: https://www.fricydim.org/oraciones/oraciones-fricydim/"
     ]
+  },
+  {
+    "date": "Irlanda-1879",
+    "country_flag": "fi fi-ie fib",
+    "imageSrc": "https://www.iglesiapalmariana.org/wp-content/uploads/2020/12/IMG-20201102-WA0011-155x300.jpg",
+    "title": "Nuestra Señora de Knock, Irlanda, año 1879",
+    "link": "https://www.iglesiapalmariana.org/apariciones-de-knock/",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
   },
   {
     "date": "Francia-1858",
@@ -776,6 +826,16 @@
       "",
       "Fuente: https://unpasoaldia.com/2020/09/19/las-profecias-de-la-virgen-de-la-salette/"
     ]
+  },
+  {
+    "date": "Francia-1830",
+    "country_flag": "fi fi-fr fib",
+    "imageSrc": "https://www.el-carabobeno.com/wp-content/uploads/2021/11/virgen-milagrosa.jpg",
+    "title": "Virgen de la Medalla Milagrosa, Francia 1830",
+    "link": "https://www.chapellenotredamedelamedaillemiraculeuse.com/langues/espanol/las-apariciones-y-la-medalla/",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
   },
   {
     "date": "Ecuador-1594",
