@@ -367,6 +367,16 @@
     ]
   },
   {
+    "date": "Bosnia-Herzegovina-1981",
+    "country_flag": "fi fi-pl fib",
+    "imageSrc": "https://www.holyart.es/blog/wp-content/uploads/sites/13/2023/05/virgen-medjugorje-podbrdo-11.jpg",
+    "title": "Nuestra Señora de la Paz, Virgen de Medjugorje, Bosnia-Herzegovina, año 1981-1982",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
     "date": "Francia-1972",
     "country_flag": "fi fi-fr fib",
     "imageSrc": "https://i0.wp.com/croix-glorieuse-dozule.fr/wp-content/uploads/2022/05/20220328_105456-scaled.jpg?resize=768%2C1024&ssl=1",
@@ -453,6 +463,16 @@
       "",
       "Fuente:https://www.deunanube.com/2018/uvas-benditas-guia-practica/"
     ]
+  },
+  {
+    "date": "España-1961",
+    "country_flag": "fi fi-pl fib",
+    "imageSrc": "https://rdcwp.s3.amazonaws.com/wp-content/uploads/2004/06/garabandal-Virgen-cuad1.png",
+    "title": "Nuestra Señora del Carmen de Garabandal, año 1961-1965",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
   },
   {
     "date": "Alemania-1949",

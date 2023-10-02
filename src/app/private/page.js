@@ -845,7 +845,7 @@ const Private = () => {
                                     (line, index) => (
                                       <React.Fragment key={index}>
                                         {line.match(
-                                          /(Coronilla en honor a San Miguel Arcángel|Coronilla de las Lágrimas y Sangre|Séptimo Día de la SETENA)/
+                                          /(Como Mitigarlo|Exorcismo No. 12|Exorcismo No. 11|Exorcismo No. 10|Coronilla en honor a San Miguel Arcángel|Coronilla de las Lágrimas y Sangre|Séptimo Día de la SETENA)/
                                         ) ? (
                                           <strong>{line}</strong>
                                         ) : line.match(/(Fuente:)/i) ? (
@@ -908,7 +908,7 @@ const Private = () => {
                                     (line, index) => (
                                       <React.Fragment key={index}>
                                         {line.match(
-                                          /(Coronilla en honor a San Miguel Arcángel|Coronilla de las Lágrimas y Sangre|Séptimo Día de la SETENA)/
+                                          /(Indulgencias por las almas del purgatorio|Oración al ángel de la guarda|Estampas con imágenes piadosas y folletos |Anna Catalina Emmerick |Tomas de Kempis|Sor María de Jesús de Agreda|Libros y Estampas con imágenes piadosas|Coronilla en honor a San Miguel Arcángel|Coronilla de las Lágrimas y Sangre|Séptimo Día de la SETENA)/
                                         ) ? (
                                           <strong>{line}</strong>
                                         ) : line.match(/(Fuente:)/i) ? (
@@ -929,6 +929,141 @@ const Private = () => {
                                 : item.content_collapsible9}
                             </>
                           </Typography>
+                          {item.date === 'Suiza-1937' && (
+                            <>
+                              <>Devoción e imagen a la Divina Misericordia</>
+                              <br />
+                              <img
+                                src="https://cdn.culturagenial.com/es/imagenes/divina-misericordia-1-3c.jpg"
+                                alt="Jesus de la divina misericordia"
+                                style={{
+                                  display: 'inline-grid',
+                                  marginBottom: '20px',
+                                  marginTop: '15px',
+                                  width: '200px',
+                                }}
+                              />
+                              <br />
+                              <Link href="https://www.ewtn.com/es/catolicismo/fiestas-liturgicas/divina-misericordia-21077">
+                                Fuente:
+                                https://www.ewtn.com/es/catolicismo/fiestas-liturgicas/divina-misericordia-21077
+                              </Link>
+                              <br />
+                              <br />
+                              <>Devoción e imagen al Sagrado Corazón de Jesús</>
+                              <br />
+                              <img
+                                src="https://www.devocionario.com/imagenes/corazon.jpg"
+                                alt="sagrado corazon de jesus"
+                                style={{
+                                  display: 'inline-grid',
+                                  marginBottom: '20px',
+                                  marginTop: '15px',
+                                  width: '200px',
+                                }}
+                              />
+                              <br />
+                              <Link href="https://es.catholic.net/op/articulos/15586/la-devocin-al-sagrado-corazn-de-jess.html#modal">
+                                Fuente:
+                                https://es.catholic.net/op/articulos/15586/la-devocin-al-sagrado-corazn-de-jess.html#modal
+                              </Link>
+                              <br />
+                              <br />
+                              <>
+                                Devoción e imagen al Inmaculado Corazón de María
+                              </>
+                              <br />
+                              <img
+                                src="http://www.rezarconfe.com/uploads/7/5/1/7/7517084/editor/sagrado-corazon-de-mar-a.jpg?1518005147"
+                                alt="Inmaculado corazon de María"
+                                style={{
+                                  display: 'inline-grid',
+                                  marginBottom: '20px',
+                                  marginTop: '15px',
+                                  width: '200px',
+                                }}
+                              />
+                              <br />
+                              <Link href="https://www.ewtn.com/es/catolicismo/fiestas-liturgicas/inmaculado-corazon-de-maria-20998">
+                                Fuente:
+                                https://www.ewtn.com/es/catolicismo/fiestas-liturgicas/inmaculado-corazon-de-maria-20998
+                              </Link>
+                              <br />
+                              <br />
+                              <br />
+                              <>Devoción e imagen de la Santa Faz</>
+                              <br />
+                              <img
+                                src="https://unpasoaldia.files.wordpress.com/2021/01/faz.jpg"
+                                alt="santa faz"
+                                style={{
+                                  display: 'inline-grid',
+                                  marginBottom: '20px',
+                                  marginTop: '15px',
+                                  width: '200px',
+                                }}
+                              />
+                              <br />
+                              <Link href="https://unpasoaldia.com/2021/01/15/devocionario-de-la-santa-faz-de-jesus/">
+                                Fuente:
+                                https://unpasoaldia.com/2021/01/15/devocionario-de-la-santa-faz-de-jesus/
+                              </Link>
+                              <br />
+                              <br />
+                              <br />
+                              <>
+                                Meditación e imagen de Nuestro Señor Jesucristo
+                                en el Huerto de los Olivos
+                              </>
+                              <br />
+                              <img
+                                src="https://3.bp.blogspot.com/-ywdARYFNNXU/UVUCrmb6JSI/AAAAAAAATgk/jpeiuAlNp84/s1600/Antolinez-huerto_olivos-1a.jpg"
+                                alt="huerto de los olivos"
+                                style={{
+                                  display: 'inline-grid',
+                                  marginBottom: '20px',
+                                  marginTop: '15px',
+                                  width: '200px',
+                                }}
+                              />
+                              <br />
+                              <Link href="https://www.aciprensa.com/recurso/2581/meditacion-sobre-la-agonia-de-jesus-en-el-huerto-de-los-olivos">
+                                Fuente:
+                                https://www.aciprensa.com/recurso/2581/meditacion-sobre-la-agonia-de-jesus-en-el-huerto-de-los-olivos
+                              </Link>
+                              <br />
+                              <br />
+                              <>
+                                Descargar-Tratado de la verdadera devoción a La
+                                Santísima Virgen de San Luis María de Montfort
+                              </>
+                              <br />
+                              <Link href="https://www.montfort.org/content/uploads/pdf/PDF_ES_26_1.pdf">
+                                Fuente:
+                                https://www.montfort.org/content/uploads/pdf/PDF_ES_26_1.pdf
+                              </Link>
+                              <br />
+                              <br />
+                              <>Devociones de Santa Brígida</>
+                              <br />
+                              <br />
+                              <>15 Oraciones</>
+                              <br />
+                              <Link href="https://hozana.org/es/oracion/oracion/santa-brigida">
+                                Fuente:
+                                https://hozana.org/es/oracion/oracion/santa-brigida
+                              </Link>
+                              <br />
+                              <br />
+                              <>7 Pater Noster</>
+                              <br />
+                              <Link href="https://hozana.org/es/oracion/oracion/santa-brigida/oraciones-por-doce-anos">
+                                Fuente:
+                                https://hozana.org/es/oracion/oracion/santa-brigida/oraciones-por-doce-anos
+                              </Link>
+                              <br />
+                            </>
+                          )}
                         </AccordionDetails>
                       </Accordion>
                     </>
