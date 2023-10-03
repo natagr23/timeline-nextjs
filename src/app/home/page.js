@@ -173,7 +173,7 @@ const Home = () => {
                             ? item.content_collapsible1.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Resumen de las 18 apariciones|Las terribles calamidades que fueron anunciadas se empezaron a cumplir|Difusión de los mensajes|Los 5 años siguientes|Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Los videntes|Resumen de las 18 apariciones|Las terribles calamidades que fueron anunciadas se empezaron a cumplir|Difusión de los mensajes|Los 5 años siguientes|Otros Mensajes|Salud del alma y del cuerpo |Promesas de Nuestro Señor Jesús|\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
