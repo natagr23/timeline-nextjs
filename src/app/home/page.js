@@ -319,7 +319,7 @@ const Home = () => {
                             ? item.content_collapsible3.map((line, index) => (
                                 <React.Fragment key={index}>
                                   {line.match(
-                                    /(Las Uvas de San Damiano|Oración de reparación a Dios|El mismo mensaje ha dado Nuestra Señora en Lourdes y en Fátima: oración, penitencia y consagración a su Inmaculado Corazón.|Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
+                                    /(Rosario de las Lágrimas y Sangre dedicado a María Rosa Mística|Las Uvas de San Damiano|Oración de reparación a Dios|El mismo mensaje ha dado Nuestra Señora en Lourdes y en Fátima: oración, penitencia y consagración a su Inmaculado Corazón.|Coronilla Reparadora|Oraciones enseñadas a los pastorcitos|Acto de Consagración al Inmaculado Corazón de María|Consagración al Sacratísimo Corazón Eucarístico de Jesús|1. Oraciones de Vida:|2. Sem-Chi-Go:|3. Vida de Ofrecimiento:|4. Amen:|Salud del alma y del cuerpo |Las Cinco Espiritualidades|Oración Diaria|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
                                   ) ? (
                                     <strong>{line}</strong>
                                   ) : line.match(/(Fuente:)/i) ? (
@@ -337,166 +337,85 @@ const Home = () => {
                             : item.content_collapsible3}
                         </>
                       </Typography>
+                      {item.date === 'Argentina-1983' && (
+                        <>
+                          <br />
+                          <>Medalla</>
+                          <br />
+                          <img
+                            src="https://i.etsystatic.com/13312237/r/il/b7d787/4665010038/il_794xN.4665010038_3qmf.jpg"
+                            alt="Medalla"
+                            style={{
+                              display: 'inline-grid',
+                              marginBottom: '20px',
+                              marginTop: '15px',
+                              width: '200px',
+                            }}
+                          />
+                          <br />
+                          <img
+                            src="https://i.etsystatic.com/13312237/r/il/46c456/4664974038/il_794xN.4664974038_1yma.jpg"
+                            alt="Medalla2"
+                            style={{
+                              display: 'inline-grid',
+                              marginBottom: '20px',
+                              marginTop: '15px',
+                              width: '200px',
+                            }}
+                          />
+                          <br />
+
+                          <Link href="https://www.etsy.com/es/listing/1425738691/medalla-nuestra-senora-del-rosario-de">
+                            Fuente:
+                            https://www.etsy.com/es/listing/1425738691/medalla-nuestra-senora-del-rosario-de
+                          </Link>
+                          <br />
+                        </>
+                      )}
+                      {item.date === 'Italia-1947' && (
+                        <>
+                          <br />
+                          <>Fuente de agua</>
+                          <br />
+                          <img
+                            src="https://carifilii.es/wp-content/uploads/2016/11/FUENTE-ACTUAL.jpgtn_.jpg"
+                            alt="Fuente"
+                            style={{
+                              display: 'inline-grid',
+                              marginBottom: '20px',
+                              marginTop: '15px',
+                              width: '200px',
+                            }}
+                          />
+                          <br /> <br />
+                          <Link href="https://carifilii.es/apariciones/listado-de-apariciones/rosa-mistica">
+                            Fuente:
+                            https://carifilii.es/apariciones/listado-de-apariciones/rosa-mistica
+                          </Link>
+                          <br />
+                          <br />
+                          <>Medalla</>
+                          <br />
+                          <img
+                            src="https://rdcwp.s3.amazonaws.com/wp-content/uploads/2004/06/Medalla-de-la-Rosa-M%C3%ADstica.jpg"
+                            alt="Medalla"
+                            style={{
+                              display: 'inline-grid',
+                              marginBottom: '20px',
+                              marginTop: '15px',
+                              width: '200px',
+                            }}
+                          />
+                          <br />
+                          <Link href="https://www.reinadelcielo.org/apariciones-de-maria-rosa-mistica-italia/">
+                            Fuente:
+                            https://www.reinadelcielo.org/apariciones-de-maria-rosa-mistica-italia/
+                          </Link>
+                          <br />
+                        </>
+                      )}
                     </AccordionDetails>
                   </Accordion>
-
-                  {item.date === 'Brasil-1991-present' && (
-                    <>
-                      <Accordion
-                        expanded={
-                          expanded === item.content_collapsible4 + index
-                        }
-                        onChange={handleChange(
-                          item.content_collapsible4 + index
-                        )}
-                      >
-                        <AccordionSummary
-                          aria-controls="panel4d-content"
-                          id="panel4d-header"
-                        >
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Cómo Mitigarlo II
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                            }}
-                          >
-                            <>
-                              {item.content_collapsible4 &&
-                              Array.isArray(item.content_collapsible4)
-                                ? item.content_collapsible4.map(
-                                    (line, index) => (
-                                      <React.Fragment key={index}>
-                                        {line.match(
-                                          /(ROSARIO DE LA PAZ|Primer Dia de la SETENA |Segundo Día de la SETENA|HORA DE LA PAZ|ROSARIO DE LA EUCARISTÍA|ORACIÓN FINAL|CONSAGRACIONES CONSAGRACIÓN AL SAGRADO CORAZÓN DE JESÚS|CONSAGRACIÓN AL INMACULADO CORAZÓN DE MARÍA|CONSAGRACIÓN AL ESPÍRITU SANTO|Tercer Día de la SETENA|Cuarto Día de la SETENA|Quinto Día de la SETENA|Sexto Día de la SETENA|Séptimo Día de la SETENA)/
-                                        ) ? (
-                                          <strong>{line}</strong>
-                                        ) : (
-                                          line
-                                        )}
-                                        <br />
-                                      </React.Fragment>
-                                    )
-                                  )
-                                : item.content_collapsible4}
-                            </>
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                      <Accordion
-                        expanded={
-                          expanded === item.content_collapsible5 + index
-                        }
-                        onChange={handleChange(
-                          item.content_collapsible5 + index
-                        )}
-                      >
-                        <AccordionSummary
-                          aria-controls="panel5d-content"
-                          id="panel5d-header"
-                        >
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Cómo Mitigarlo III
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                            }}
-                          >
-                            <>
-                              {item.content_collapsible5 &&
-                              Array.isArray(item.content_collapsible5)
-                                ? item.content_collapsible5.map(
-                                    (line, index) => (
-                                      <React.Fragment key={index}>
-                                        {line.match(
-                                          /(Hora del Espíritu Santo |Hora de los Ángeles de Dios|Hora de San José|Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
-                                        ) ? (
-                                          <strong>{line}</strong>
-                                        ) : (
-                                          line
-                                        )}
-                                        <br />
-                                      </React.Fragment>
-                                    )
-                                  )
-                                : item.content_collapsible5}
-                            </>
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                      <Accordion
-                        expanded={
-                          expanded === item.content_collapsible6 + index
-                        }
-                        onChange={handleChange(
-                          item.content_collapsible6 + index
-                        )}
-                      >
-                        <AccordionSummary
-                          aria-controls="panel5d-content"
-                          id="panel5d-header"
-                        >
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                              fontWeight: 'bold',
-                            }}
-                          >
-                            Cómo Mitigarlo IV
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography
-                            style={{
-                              fontFamily: 'Trebuchet MS',
-                              fontSize: '0.9em',
-                            }}
-                          >
-                            <>
-                              {item.content_collapsible6 &&
-                              Array.isArray(item.content_collapsible6)
-                                ? item.content_collapsible6.map(
-                                    (line, index) => (
-                                      <React.Fragment key={index}>
-                                        {line.match(
-                                          /(Hora del Sagrado Corazón de Jesús |Hora de los Santos de Dios|Hora de la Eucaristía |Modo de Rezar|Siete Dolores de San José\(Siete Misterios Dolorosos\))/i
-                                        ) ? (
-                                          <strong>{line}</strong>
-                                        ) : (
-                                          line
-                                        )}
-                                        <br />
-                                      </React.Fragment>
-                                    )
-                                  )
-                                : item.content_collapsible6}
-                            </>
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                    </>
-                  )}
                 </Card>
               </Card>
             </VerticalTimelineElement>
