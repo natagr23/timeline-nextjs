@@ -649,6 +649,26 @@
     ]
   },
   {
+    "date": "Italia-1815",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.plusesmas.com/pictures/biografias/6000/6143.jpg",
+    "title": "San Juan Bosco, Italia, 1815-1888",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Italia-1789",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.santiebeati.it/immagini/Original/94000/94000A.JPG",
+    "title": "Venerable padre Bernardo María Clausi, Italia, 1789-1849",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
     "date": "Francia-1786",
     "country_flag": "fi fi-fr fib",
     "imageSrc": "https://corazondejesus.es/wp-content/uploads/2018/08/Cura-de-Ars-632x786.jpg",
@@ -659,10 +679,40 @@
     "content_collapsible3": "title 3"
   },
   {
+    "date": "Italia-1786",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.religionenlibertad.com/images/carpeta_relacionados/2017/12/27/md/39389_san_gaspar_.jpg",
+    "title": "San Gaspar de Búfalo, Alemania, 1786-1837",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Italia-1774",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.fatima.pe/images/new/2013/esp137c.jpg",
+    "title": "Beata Isabel Canori Mora, Italia, 1774-1825",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
     "date": "Alemania-1774",
     "country_flag": "fi fi-de fib",
     "imageSrc": "https://www.corazones.org/liturgia/santos/z_ana_catalina_emmerich.jpg",
     "title": "Ana Catalina Emmerich, Alemania, 1774-1824",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Italia-1769",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.corazones.org/liturgia/z_imagenes/a_santos/ana_maria_taigi.jpg",
+    "title": "Beata Ana María Taigi, Italia, 1769-1837",
     "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
