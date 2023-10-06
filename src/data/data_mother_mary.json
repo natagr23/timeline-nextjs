@@ -931,6 +931,26 @@
       "Fuente: http://sagradafamilia.ca/Textos/Rosa%20Mistica%20triptico%20con%20rosario.pdf"
     ]
   },
+  {
+    "date": "Canadá-1946",
+    "country_flag": "fi fi-ca fib",
+    "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bartolom%C3%A9_Esteban_Perez_Murillo_017_black_and_white.jpg",
+    "title": "Aparición de la Virgen, Canadá, año 1946",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
+    "date": "Alemania-1946",
+    "country_flag": "fi fi-de fib",
+    "imageSrc": "https://mariaporelmundo.com/wp-content/uploads/2021/01/NUESTRA-SEN%CC%83ORA-DE-MARIENFRIED.jpg",
+    "title": "Nuestra Señora de Marienfried, Alemania, año 1946",
+    "link": "https://mariaporelmundo.com/apariciones-marianas-en-alemania/nuestra-senora-de-marienfried/",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
 
   {
     "date": "Holanda-1945",
