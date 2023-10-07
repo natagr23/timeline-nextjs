@@ -543,6 +543,16 @@
     "content_collapsible3": ["title 3"]
   },
   {
+    "date": "Nicaragua-1980",
+    "country_flag": "fi fi-ni fib",
+    "imageSrc": "https://www.corazones.org/z_imagenes/virgen_maria/cuapa/iluminada.jpg",
+    "title": "Virgen de Cuapa, Nicaragua, año 1980",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
     "date": "Venezuela-1976",
     "country_flag": "fi fi-ve fib",
     "imageSrc": "https://www.corazones.org/maria/betania_venezuela.jpg",
@@ -703,7 +713,27 @@
     "date": "España-1961",
     "country_flag": "fi fi-es fib",
     "imageSrc": "https://rdcwp.s3.amazonaws.com/wp-content/uploads/2004/06/garabandal-Virgen-cuad1.png",
-    "title": "Nuestra Señora del Carmen de Garabandal, año 1961-1965",
+    "title": "Nuestra Señora del Carmen de Garabandal, España, 1961-1965",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
+    "date": "Eslovaquia-1958",
+    "country_flag": "fi fi-sk fib",
+    "imageSrc": "https://forosdelavirgen.org/wp-content/uploads/2014/05/imagen-de-ns-de-turzovka.jpg",
+    "title": "Nuestra Señora Reina de Turzovka, Eslovaquia, año 1958",
+    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
+    "date": "Estados Unidos-1956",
+    "country_flag": "fi fi-us fib",
+    "imageSrc": "https://www.corazones.org/maria/america.jpg",
+    "title": "Nuestra Señora de America, Estados Unidos, año 1956",
     "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
     "content_collapsible1": ["title 1"],
     "content_collapsible2": ["title 2"],

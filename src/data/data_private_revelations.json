@@ -649,11 +649,51 @@
     ]
   },
   {
+    "date": "Italia-1943",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://2.bp.blogspot.com/-GQ1P1AS5PuE/T3Je0RjsjkI/AAAAAAAAD2Q/g1CchY9i0cE/s1600/Teresa_Musco.jpg",
+    "title": "Teresa Musco, Italia, 1943-1976",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Hungría-1913",
+    "country_flag": "fi fi-hu fib",
+    "imageSrc": "https://flameoflove.us/wp-content/uploads/2023/01/images-3.jpg",
+    "title": "Elizabeth Kindelmann, Hungría, 1913-1985",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Italia-1912",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.st-antonius.at/antonius/wp-content/uploads/2009/07/cornacchiola.jpg",
+    "title": "Bruno Cornachiola, Italia, 1912-2001",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
     "date": "Italia-1907",
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.santiebeati.it/immagini/Thumbs/99299/99299.JPG",
     "title": "Sor Eugenia Elisabetta Ravasio, Italia, 1907-1990",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Austria-1907",
+    "country_flag": "fi fi-at fib",
+    "imageSrc": "https://www.katholischer-shop.at/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/d/v/dvd-301.jpg",
+    "title": "Aloisia Lex, Austria, 1907-1984",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -663,7 +703,7 @@
     "country_flag": "fi fi-pl fib",
     "imageSrc": "https://webcatolicodejavier.org/SantaFaustinaKowalska.jpg",
     "title": "Santa María Faustina Kowalska , Polonia, 1905-1938",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -673,17 +713,17 @@
     "country_flag": "fi fi-fr fib",
     "imageSrc": "https://www.martherobin.com/wp-content/uploads/2016/09/00_Marthe-Robin-28-ans_VisuelRetravaill_-noirblancCFDC2015.jpg",
     "title": "Marta Robin, Francia, 1902-1981",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
   },
   {
-    "date": "Polonia-1901",
+    "date": "Eslovaquia-1901",
     "country_flag": "fi fi-sk fib",
     "imageSrc": "https://forosdelavirgen.org/wp-content/uploads/2010/02/Sor_natalia-magdolna-500x375.jpg",
-    "title": "Sor María Natalia Magdolna, Polonia, 1901-1992",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "title": "Sor María Natalia Magdolna, Eslovaquia, 1901-1992",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -693,7 +733,7 @@
     "country_flag": "fi fi-de fib",
     "imageSrc": "https://www.biografiasyvidas.com/biografia/n/fotos/neumann_theresa.jpg",
     "title": "Teresa Neumann, Alemania, 1898-1962",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -703,7 +743,17 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.ecocatolico.org/media/k2/items/cache/b3a54ecc0915f9347c3f53fa31d161fe_XL.jpg",
     "title": "María Valtorta, Italia, 1897-1961",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Italia-1895",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.icsaicstoria.it/wp-content/uploads/2020/12/ELENAAIELLO.jpeg",
+    "title": "Beata Sor Elena Aiello, Italia, 1895-1961",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -713,7 +763,17 @@
     "country_flag": "fi fi-pl fib",
     "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Fr.Maximilian_Kolbe_1939.jpg",
     "title": "San Maximiliano Kolbe, Polonia, 1894-1941",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": "title 1",
+    "content_collapsible2": "title 2",
+    "content_collapsible3": "title 3"
+  },
+  {
+    "date": "Italia-1887",
+    "country_flag": "fi fi-it fib",
+    "imageSrc": "https://www.buscabiografias.com/img/people/Padre-P%C3%ADo.jpg",
+    "title": "San Pío de Pietrelcina, Italia, 1887-1968",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -723,7 +783,7 @@
     "country_flag": "fi fi-be fib",
     "imageSrc": "https://1.bp.blogspot.com/-8aDJaOk8kgk/XnrQaqQVJ9I/AAAAAAAAbm0/IgiM6IKqGgUfchiEPtJysm4rHb2nZL0LwCNcBGAsYHQ/s1600/1BERTHE2.jpg",
     "title": "Bertha Francisca María Ghislaine Petit, Italia, 1870-1943",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -733,7 +793,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://etcatholic.org/wp-content/uploads/2023/01/Luisa-Piccarreta.jpg",
     "title": "Luisa Piccarreta, Italia, 1865-1947",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -743,7 +803,7 @@
     "country_flag": "fi fi-fr fib",
     "imageSrc": "https://bottegadivina.files.wordpress.com/2020/02/mariejulie.gif",
     "title": "María Julia Jahenny, Francia, 1850-1941",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -753,7 +813,7 @@
     "country_flag": "fi fi-il fib",
     "imageSrc": "https://ocarm.org/images/ordo/maryofjesuscrucified_350.jpg",
     "title": "María de Jesús Crucificado, Israel, 1846-1878",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -763,7 +823,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://ec.aciprensa.com/newwiki/images/3/3c/185554_380349315372372_303780494_n.jpg",
     "title": "Papa San Pío X, Italia, 1835-1914",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -773,7 +833,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.plusesmas.com/pictures/biografias/6000/6143.jpg",
     "title": "San Juan Bosco, Italia, 1815-1888",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -783,7 +843,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://imagenes.catholic.net/imagenes_db/151346_32222.jpg",
     "title": "Papa León XIII, Italia, 1810-1903",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -793,7 +853,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.santiebeati.it/immagini/Original/94000/94000A.JPG",
     "title": "Venerable padre Bernardo María Clausi, Italia, 1789-1849",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -803,7 +863,7 @@
     "country_flag": "fi fi-fr fib",
     "imageSrc": "https://corazondejesus.es/wp-content/uploads/2018/08/Cura-de-Ars-632x786.jpg",
     "title": "Juan María Vianney, Francia, 1786-1859",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -813,7 +873,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.religionenlibertad.com/images/carpeta_relacionados/2017/12/27/md/39389_san_gaspar_.jpg",
     "title": "San Gaspar de Búfalo, Alemania, 1786-1837",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -823,7 +883,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.fatima.pe/images/new/2013/esp137c.jpg",
     "title": "Beata Isabel Canori Mora, Italia, 1774-1825",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -833,7 +893,7 @@
     "country_flag": "fi fi-de fib",
     "imageSrc": "https://www.corazones.org/liturgia/santos/z_ana_catalina_emmerich.jpg",
     "title": "Ana Catalina Emmerich, Alemania, 1774-1824",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
@@ -843,7 +903,7 @@
     "country_flag": "fi fi-it fib",
     "imageSrc": "https://www.corazones.org/liturgia/z_imagenes/a_santos/ana_maria_taigi.jpg",
     "title": "Beata Ana María Taigi, Italia, 1769-1837",
-    "link": "https://aparicionesdejesusymaria.files.wordpress.com/2020/07/apariciones-y-milagros-de-la-santc3adsima-virgen-marc3ada.pdf",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
     "content_collapsible1": "title 1",
     "content_collapsible2": "title 2",
     "content_collapsible3": "title 3"
