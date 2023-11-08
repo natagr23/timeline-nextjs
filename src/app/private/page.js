@@ -143,8 +143,8 @@ const Private = () => {
                     </Link>
                   </CardActions>
                   <Accordion
-                    expanded={expanded === item.content_collapsible1}
-                    onChange={handleChange(item.content_collapsible1)}
+                    expanded={expanded === item.content_collapsible1 + index}
+                    onChange={handleChange(item.content_collapsible1 + index)}
                   >
                     <AccordionSummary
                       aria-controls="panel1d-content"
@@ -194,8 +194,8 @@ const Private = () => {
                     </AccordionDetails>
                   </Accordion>
                   <Accordion
-                    expanded={expanded === item.content_collapsible2}
-                    onChange={handleChange(item.content_collapsible2)}
+                    expanded={expanded === item.content_collapsible2 + index}
+                    onChange={handleChange(item.content_collapsible2 + index)}
                   >
                     <AccordionSummary
                       aria-controls="panel2d-content"
