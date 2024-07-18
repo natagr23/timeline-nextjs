@@ -32,7 +32,7 @@ const Footer = () => {
               icon={<ImportContactsIcon />}
             />
             <span style={{ fontWeight: 'bold' }}>
-              Revelaciones privadas católicas
+              Revelaciones Privadas Católicas
             </span>
           </Link>
           <Link
