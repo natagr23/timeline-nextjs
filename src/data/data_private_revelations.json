@@ -1063,6 +1063,16 @@
     "content_collapsible3": "title 3"
   },
   {
+    "date": "Francia-1590",
+    "country_flag": "fi fi-fr fib",
+    "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Marie_des_Vall%C3%A9es.jpg/230px-Marie_des_Vall%C3%A9es.jpg",
+    "title": "Sor María des Vallées, España, 1590-1656",
+    "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
+    "content_collapsible1": ["title 1"],
+    "content_collapsible2": ["title 2"],
+    "content_collapsible3": ["title 3"]
+  },
+  {
     "date": "España-1563",
     "country_flag": "fi fi-es fib",
     "imageSrc": "https://3.bp.blogspot.com/-S0faniknrgw/WV3Dxs4daVI/AAAAAAABqDA/wQ0-FYu4qgQNkTcLrCdSMDY9aWTn4mSmgCKgBGAs/s1600/Sor%2BMariana%2Bde%2BJesus%2BTorres-2a.jpg",
