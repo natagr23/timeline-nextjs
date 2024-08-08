@@ -10,7 +10,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 https://profecias-ultimos-tiempos.vercel.app/
 
-https://github.com/user-attachments/assets/6f1f309a-d0cf-4119-a5dc-e32542c472e3
+https://github.com/user-attachments/assets/b9d50720-1d12-4ebd-ab4d-d29b057e78e2
+
+
 
 
 ## Getting Started
