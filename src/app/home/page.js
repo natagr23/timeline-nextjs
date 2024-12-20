@@ -1,65 +1,65 @@
-'use client';
-import React, { useState } from 'react';
-import '../../app/App.css';
+"use client";
+import React, { useState } from "react";
+import "../../app/App.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { Box, Typography, Link } from '@mui/material';
-import { Card, CardActions, CardContent, CardMedia } from '@mui/material';
-import Image from 'next/image';
-import '@aws-amplify/ui-react/styles.css';
-import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
-import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import '/node_modules/flag-icons/css/flag-icons.min.css';
-import '@fontsource/roboto/300.css';
-import data from '../../data/data_mother_mary.json';
-import { metadata } from './metadata';
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Box, Typography, Link } from "@mui/material";
+import { Card, CardActions, CardContent, CardMedia } from "@mui/material";
+import Image from "next/image";
+import "@aws-amplify/ui-react/styles.css";
+import { styled } from "@mui/material/styles";
+import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
+import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "@fontsource/roboto/300.css";
+import data from "../../data/data_mother_mary.json";
+import { metadata } from "./metadata";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} rounded {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
-  '&:not(:last-child)': {
+  "&:not(:last-child)": {
     borderBottom: 2,
   },
-  '&:before': {
-    display: 'none',
+  "&:before": {
+    display: "none",
   },
 }));
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
     {...props}
   />
 ))(({ theme }) => ({
   backgroundColor:
-    theme.palette.mode === 'dark'
-      ? 'rgba(255, 255, 255, .05)'
-      : 'rgba(0, 0, 0, .03)',
-  flexDirection: 'row-reverse',
-  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    transform: 'rotate(90deg)',
+    theme.palette.mode === "dark"
+      ? "rgba(255, 255, 255, .05)"
+      : "rgba(0, 0, 0, .03)",
+  flexDirection: "row-reverse",
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    transform: "rotate(90deg)",
   },
-  '& .MuiAccordionSummary-content': {
+  "& .MuiAccordionSummary-content": {
     marginLeft: theme.spacing(1),
-    marginTop: '0.2px',
+    marginTop: "0.2px",
   },
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(1),
-  borderTop: '1px solid rgba(0, 0, 0, .125)',
+  borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
 const Home = () => {
   const pageTitle = metadata.title.default;
-  const [expanded, setExpanded] = React.useState('');
+  const [expanded, setExpanded] = React.useState("");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -67,28 +67,30 @@ const Home = () => {
   return (
     <Box
       sx={{
-        background: 'rgb(217, 207, 173)',
+        background: "rgb(217, 207, 173)",
       }}
     >
-      <VerticalTimeline>
+
+      <VerticalTimeline  layout="2-columns">
         {data.map((item, index) => (
           <>
-            <VerticalTimelineElement
+            <VerticalTimelineElement layout={"2-columns"}
+
               className="vertical-timeline-element--work"
               contentStyle={{
-                background: 'rgb(33, 150, 243)',
-                color: '#000000',
-                marginTop: '20px',
+                background: "rgb(33, 150, 243)",
+                color: "#000000",
+                marginTop: "20px",
               }}
               contentArrowStyle={{
-                borderRight: '7px solid  rgb(69, 126, 217)',
+                borderRight: "7px solid  rgb(69, 126, 217)",
               }}
               date={item.date}
-              iconStyle={{ background: 'rgb(33,150,243)' }}
+              iconStyle={{ background: "rgb(33,150,243)" }}
               icon={
                 <>
                   <span
-                    style={{ marginTop: '1.3' + 'em' }}
+                    style={{ marginTop: "1.3" + "em" }}
                     class={item.country_flag}
                   ></span>
                 </>
@@ -104,17 +106,17 @@ const Home = () => {
                       width={100}
                       alt="mother mary"
                       height={150}
-                      style={{ display: 'inline-grid' }}
+                      style={{ display: "inline-grid" }}
                     />
                     <Typography
                       gutterBottom
                       variant="h5"
                       component="div"
                       style={{
-                        marginTop: '1.2' + 'em',
-                        fontSize: '1.0em',
-                        fontWeight: 'bold',
-                        fontFamily: 'Trebuchet MS',
+                        marginTop: "1.2" + "em",
+                        fontSize: "1.0em",
+                        fontWeight: "bold",
+                        fontFamily: "Trebuchet MS",
                       }}
                     >
                       {item.title}
@@ -123,9 +125,9 @@ const Home = () => {
                   <CardActions>
                     <span
                       style={{
-                        marginLeft: '1' + 'em',
-                        fontSize: '12px',
-                        fontFamily: 'Trebuchet MS',
+                        marginLeft: "1" + "em",
+                        fontSize: "12px",
+                        fontFamily: "Trebuchet MS",
                       }}
                     >
                       Fuente:
@@ -133,9 +135,9 @@ const Home = () => {
                     <Link color="#6b34a6" href={item.link} variant="body2">
                       <span
                         style={{
-                          marginLeft: '1' + 'em',
-                          fontSize: '11px',
-                          fontFamily: 'Trebuchet MS',
+                          marginLeft: "1" + "em",
+                          fontSize: "11px",
+                          fontFamily: "Trebuchet MS",
                         }}
                       >
                         {item.link}
@@ -152,9 +154,9 @@ const Home = () => {
                     >
                       <Typography
                         style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
-                          fontWeight: 'bold',
+                          fontFamily: "Trebuchet MS",
+                          fontSize: "0.9em",
+                          fontWeight: "bold",
                         }}
                       >
                         Prodigios que ocurrieron
@@ -163,8 +165,8 @@ const Home = () => {
                     <AccordionDetails>
                       <Typography
                         style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
+                          fontFamily: "Trebuchet MS",
+                          fontSize: "0.9em",
                         }}
                       >
                         <>
@@ -203,9 +205,9 @@ const Home = () => {
                     >
                       <Typography
                         style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
-                          fontWeight: 'bold',
+                          fontFamily: "Trebuchet MS",
+                          fontSize: "0.9em",
+                          fontWeight: "bold",
                         }}
                       >
                         Advertencias futuras o eventos posteriores
@@ -214,8 +216,8 @@ const Home = () => {
                     <AccordionDetails>
                       <Typography
                         style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
+                          fontFamily: "Trebuchet MS",
+                          fontSize: "0.9em",
                         }}
                       >
                         <>
@@ -255,9 +257,9 @@ const Home = () => {
                     >
                       <Typography
                         style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
-                          fontWeight: 'bold',
+                          fontFamily: "Trebuchet MS",
+                          fontSize: "0.9em",
+                          fontWeight: "bold",
                         }}
                       >
                         Cómo Mitigarlo
@@ -266,25 +268,25 @@ const Home = () => {
                     <AccordionDetails>
                       <Typography
                         style={{
-                          fontFamily: 'Trebuchet MS',
-                          fontSize: '0.9em',
+                          fontFamily: "Trebuchet MS",
+                          fontSize: "0.9em",
                         }}
                       >
-                        {item.date === 'Chile-1983' && (
+                        {item.date === "Chile-1983" && (
                           <>
                             <img
                               src="http://t1.gstatic.com/images?q=tbn:ANd9GcQtYlifFtAflGLmPFCJtk_rkzTpGl5eAzoVqR1B7xU97LgJP5i1"
                               alt="Imagen de Chile-1983"
                               style={{
-                                display: 'inline-grid',
-                                marginBottom: '20px',
-                                marginTop: '15px',
-                                width: '200px',
+                                display: "inline-grid",
+                                marginBottom: "20px",
+                                marginTop: "15px",
+                                width: "200px",
                               }}
                             />
                           </>
                         )}
-                        {item.date === 'Francia-1972' && (
+                        {item.date === "Francia-1972" && (
                           <>
                             <strong>Cruz de Amor</strong>
                             <br />
@@ -292,10 +294,10 @@ const Home = () => {
                               src="https://bottegadivina.files.wordpress.com/2022/11/santa-cruz-gloriosa-de-la-victoria731.jpg?w=2000&h="
                               alt="cruz_de_dozule"
                               style={{
-                                display: 'inline-grid',
-                                marginBottom: '20px',
-                                marginTop: '15px',
-                                width: '350px',
+                                display: "inline-grid",
+                                marginBottom: "20px",
+                                marginTop: "15px",
+                                width: "350px",
                               }}
                             />
                             <br />
@@ -303,10 +305,10 @@ const Home = () => {
                               src="https://bottegadivina.files.wordpress.com/2022/11/91f255ca-0c3e-4c18-9bd7-91829f684890.jpg?w=2000&h="
                               alt="cruz_de_dozule"
                               style={{
-                                display: 'inline-grid',
-                                marginBottom: '20px',
-                                marginTop: '15px',
-                                width: '350px',
+                                display: "inline-grid",
+                                marginBottom: "20px",
+                                marginTop: "15px",
+                                width: "350px",
                               }}
                             />
                             <br />
@@ -337,7 +339,7 @@ const Home = () => {
                             : item.content_collapsible3}
                         </>
                       </Typography>
-                      {item.date === 'Argentina-1983' && (
+                      {item.date === "Argentina-1983" && (
                         <>
                           <br />
                           <>Medalla</>
@@ -346,10 +348,10 @@ const Home = () => {
                             src="https://i.etsystatic.com/13312237/r/il/b7d787/4665010038/il_794xN.4665010038_3qmf.jpg"
                             alt="Medalla"
                             style={{
-                              display: 'inline-grid',
-                              marginBottom: '20px',
-                              marginTop: '15px',
-                              width: '200px',
+                              display: "inline-grid",
+                              marginBottom: "20px",
+                              marginTop: "15px",
+                              width: "200px",
                             }}
                           />
                           <br />
@@ -357,10 +359,10 @@ const Home = () => {
                             src="https://i.etsystatic.com/13312237/r/il/46c456/4664974038/il_794xN.4664974038_1yma.jpg"
                             alt="Medalla2"
                             style={{
-                              display: 'inline-grid',
-                              marginBottom: '20px',
-                              marginTop: '15px',
-                              width: '200px',
+                              display: "inline-grid",
+                              marginBottom: "20px",
+                              marginTop: "15px",
+                              width: "200px",
                             }}
                           />
                           <br />
@@ -372,7 +374,7 @@ const Home = () => {
                           <br />
                         </>
                       )}
-                      {item.date === 'Italia-1947' && (
+                      {item.date === "Italia-1947" && (
                         <>
                           <br />
                           <>Fuente de agua</>
@@ -381,10 +383,10 @@ const Home = () => {
                             src="https://carifilii.es/wp-content/uploads/2016/11/FUENTE-ACTUAL.jpgtn_.jpg"
                             alt="Fuente"
                             style={{
-                              display: 'inline-grid',
-                              marginBottom: '20px',
-                              marginTop: '15px',
-                              width: '200px',
+                              display: "inline-grid",
+                              marginBottom: "20px",
+                              marginTop: "15px",
+                              width: "200px",
                             }}
                           />
                           <br /> <br />
@@ -400,10 +402,10 @@ const Home = () => {
                             src="https://rdcwp.s3.amazonaws.com/wp-content/uploads/2004/06/Medalla-de-la-Rosa-M%C3%ADstica.jpg"
                             alt="Medalla"
                             style={{
-                              display: 'inline-grid',
-                              marginBottom: '20px',
-                              marginTop: '15px',
-                              width: '200px',
+                              display: "inline-grid",
+                              marginBottom: "20px",
+                              marginTop: "15px",
+                              width: "200px",
                             }}
                           />
                           <br />
@@ -425,5 +427,7 @@ const Home = () => {
     </Box>
   );
 };
+
+
 
 export default Home;
