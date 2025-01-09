@@ -878,8 +878,20 @@
     "imageSrc": "https://www.icsaicstoria.it/wp-content/uploads/2020/12/ELENAAIELLO.jpeg",
     "title": "Beata Sor Elena Aiello, Italia, 1895-1961",
     "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
-    "content_collapsible1": "title 1",
-    "content_collapsible2": "title 2",
+    "content_collapsible1": [
+      "En marzo de 1922 mientras practicaba en privado la devoción de los «trece viernes» de San Francisco de Paula, recibió los estigmas al tiempo que su rostro sudaba sangre. Desde entonces la efusión de sangre en su cara es un fenómeno que se repetirá cada viernes de marzo y especialmente en Viernes Santo; al fenómeno físico del sangrado se unía el dolor, la privación de los sentidos, el hablar proféticamente en nombre de Jesús, de María o de San Francisco de Paula. En 1928 con Gina Mazza dan inicio en Cosenza a las Mínimas de la Pasión (Suore Minime della Passione di Nostro Signore Gesù Cristo), con el objetivo de honrar la Pasión del Señor y socorrer espiritual y materialmente a los pobres, especialmente a la infancia necesitada",
+      "",
+      ""
+    ],
+    "content_collapsible2": [
+      "De ella se cuentan muchas profecías y avisos.",
+      "",
+      "“Escucha bien lo que digo y comunícalo a todos: Mi Corazón está triste por los muchos sufrimientos que amenazan a este mundo. La justicia de nuestro Padre Celestial está ofendida gravemente. El mundo está inundado por una crecida de corrupción. Los gobiernos de los pueblos se han levantado como demonios en carne humana, y mientras hablan de paz, preparan la guerra con instrumentos devastadores, para aniquilar pueblos y naciones. Innumerables escándalos llevan las almas a la ruina, especialmente de la juventud. El hogar, fuente de la fe y de santidad, está manchado y destruido.(Los hombres) continúan viviendo pertinazmente en sus pecados. Cerca está el azote para limpiar la tierra del mal. La Justicia divina reclama la satisfacción de tantas ofensas y maldades que cubren la tierra y no se puede tolerar más. Los hombres obstinados en sus culpas no se vuelven a su Dios. La gente no se somete a la Iglesia, y desprecia a los sacerdotes por haber muchos malos entre ellos, que son causa de escándalos. …El mundo será invadido por grandes desgracias, revoluciones sangrientas, huracanes terribles, inundaciones de ríos y mares. Levanta la voz, hasta que los sacerdotes de Dios presten oído a mi mensaje, y avisen a los hombres que el tiempo está cerca, y si no se convierten a Dios con oraciones y sacrificios, el mundo se verá envuelto en una nueva guerra…] Nubes con rayos de fuego, y una tempestad de fuego pasarán sobre el mundo, y el azote será el más terrible que ha conocido la historia. Durará setenta horas. Los impíos serán aplastados y eliminados. Muchos se perderán, porque permanecen en sus pecados”",
+      "",
+      "Las horas de las Tinieblas están cerca …Yo me inclino sobre el mundo y detengo la Justicia de Dios, de otra manera estas cosas hubieran sucedido ya. Hacen falta oración y sacrificios, que vuelvan a los hombres a Dios y a mi Corazón Inmaculado. Propaga a gritos todo esto, en todo el mundo, como eco verdadero de mi voz. Hazlo saber porque ayudará a salvar muchas almas e impedirá mucha destrucción en la Iglesia y en el mundo.",
+      "",
+      "Fuente: https://www.infocatolica.com/blog/delapsis.php/1109130303-las-profecias-de-sor-elena-ai"
+    ],
     "content_collapsible3": "title 3"
   },
   {
@@ -1068,7 +1080,11 @@
     "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Marie_des_Vall%C3%A9es.jpg/230px-Marie_des_Vall%C3%A9es.jpg",
     "title": "Sor María des Vallées, España, 1590-1656",
     "link": "https://comovaradealmendro.es/wp-content/uploads/2020/03/El-Fin-de-los-Tiempos-en-las-revelaciones-privadas-cat%C3%B3licas-Tomos-I-y-II.pdf",
-    "content_collapsible1": ["Marie des Vallées, que ya en el siglo XVII recibió visiones sobre cómo sería el período de purificación y qué características tendrá el Reino de Dios que luego se establecerá en la Tierra.","","rrr"  ],
+    "content_collapsible1": [
+      "Marie des Vallées, que ya en el siglo XVII recibió visiones sobre cómo sería el período de purificación y qué características tendrá el Reino de Dios que luego se establecerá en la Tierra.",
+      "",
+      "rrr"
+    ],
     "content_collapsible2": ["title 2"],
     "content_collapsible3": ["title 3"]
   },
